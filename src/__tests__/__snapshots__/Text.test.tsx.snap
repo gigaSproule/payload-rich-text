@@ -1,0 +1,604 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text should render all custom renders if format is 111 and options not provided with all custom functions and style provided 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Normal
+    </span>
+    <div>
+      <span>
+        Custom Strong
+      </span>
+      <div>
+        <span>
+          Custom Emphasis
+        </span>
+        <div>
+          <span>
+            Custom Strikethrough
+          </span>
+          <div>
+            <span>
+              Custom Subscript
+            </span>
+            <div>
+              <span>
+                Custom Superscript
+              </span>
+              heading text
+              {"direction":"rtl"}
+            </div>
+            {"direction":"rtl"}
+          </div>
+          {"direction":"rtl"}
+        </div>
+        {"direction":"rtl"}
+      </div>
+      {"direction":"rtl"}
+    </div>
+    {"direction":"rtl"}
+  </div>
+</div>
+`;
+
+exports[`Text should render all custom renders if format is 111 and options provided with all custom functions 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Normal
+    </span>
+    <div>
+      <span>
+        Custom Strong
+      </span>
+      <div>
+        <span>
+          Custom Emphasis
+        </span>
+        <div>
+          <span>
+            Custom Strikethrough
+          </span>
+          <div>
+            <span>
+              Custom Subscript
+            </span>
+            <div>
+              <span>
+                Custom Superscript
+              </span>
+              heading text
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Text should render all default elements if format is 111 and options not provided 1`] = `
+<div>
+  <strong>
+    <em>
+      <s>
+        <sub>
+          <sup>
+            heading text
+          </sup>
+        </sub>
+      </s>
+    </em>
+  </strong>
+</div>
+`;
+
+exports[`Text should render all default elements if format is 111 and options not provided and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <strong>
+      <em>
+        <s>
+          <sub>
+            <sup>
+              heading text
+            </sup>
+          </sub>
+        </s>
+      </em>
+    </strong>
+  </span>
+</div>
+`;
+
+exports[`Text should render all default elements if format is 111 and options not provided without any custom functions and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <strong>
+      <em>
+        <s>
+          <sub>
+            <sup>
+              heading text
+            </sup>
+          </sub>
+        </s>
+      </em>
+    </strong>
+  </span>
+</div>
+`;
+
+exports[`Text should render all default elements if format is 111 and options provided without any custom functions 1`] = `
+<div>
+  <strong>
+    <em>
+      <s>
+        <sub>
+          <sup>
+            heading text
+          </sup>
+        </sub>
+      </s>
+    </em>
+  </strong>
+</div>
+`;
+
+exports[`Text should render as span if format is 0 and no options provided and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    heading text
+  </span>
+</div>
+`;
+
+exports[`Text should render as span if format is 0 and options provided without normal and style provided 1`] = `
+<div>
+  heading text
+</div>
+`;
+
+exports[`Text should render as text if format is 0 and no options provided 1`] = `
+<div>
+  heading text
+</div>
+`;
+
+exports[`Text should render as text if format is 0 and options provided without normal 1`] = `
+<div>
+  heading text
+</div>
+`;
+
+exports[`Text should render custom render if format is 0 and options provided with normal 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Normal
+    </span>
+    heading text
+  </div>
+</div>
+`;
+
+exports[`Text should render custom render if format is 0 and options provided with normal and style provided 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Normal
+    </span>
+    heading text
+    {"direction":"rtl"}
+  </div>
+</div>
+`;
+
+exports[`Text should render custom render if format is 1 and options provided with strong 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Strong
+    </span>
+    heading text
+  </div>
+</div>
+`;
+
+exports[`Text should render custom render if format is 1 and options provided with strong and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <div>
+      <span>
+        Custom Strong
+      </span>
+      heading text
+      {"direction":"rtl"}
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Text should render custom render if format is 2 and options provided with emphasis 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Emphasis
+    </span>
+    heading text
+  </div>
+</div>
+`;
+
+exports[`Text should render custom render if format is 2 and options provided with emphasis and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <div>
+      <span>
+        Custom Emphasis
+      </span>
+      heading text
+      {"direction":"rtl"}
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Text should render custom render if format is 4 and options provided with strikethrough 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Strikethrough
+    </span>
+    heading text
+  </div>
+</div>
+`;
+
+exports[`Text should render custom render if format is 4 and options provided with strikethrough and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <div>
+      <span>
+        Custom Strikethrough
+      </span>
+      heading text
+      {"direction":"rtl"}
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Text should render custom render if format is 16 and options provided with code 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Code
+    </span>
+    heading text
+  </div>
+</div>
+`;
+
+exports[`Text should render custom render if format is 16 and options provided with code and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <div>
+      <span>
+        Custom Code
+      </span>
+      heading text
+      {"direction":"rtl"}
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Text should render custom render if format is 32 and options provided with subscript 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Subscript
+    </span>
+    heading text
+  </div>
+</div>
+`;
+
+exports[`Text should render custom render if format is 32 and options provided with subscript and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <div>
+      <span>
+        Custom Subscript
+      </span>
+      heading text
+      {"direction":"rtl"}
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Text should render custom render if format is 64 and options provided with superscript 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Superscript
+    </span>
+    heading text
+  </div>
+</div>
+`;
+
+exports[`Text should render custom render if format is 64 and options provided with superscript and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <div>
+      <span>
+        Custom Superscript
+      </span>
+      heading text
+      {"direction":"rtl"}
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Text should render default code if format is 16 and no options provided 1`] = `
+<div>
+  <code>
+    heading text
+  </code>
+</div>
+`;
+
+exports[`Text should render default code if format is 16 and no options provided and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <code>
+      heading text
+    </code>
+  </span>
+</div>
+`;
+
+exports[`Text should render default code if format is 16 and options provided without code 1`] = `
+<div>
+  <code>
+    heading text
+  </code>
+</div>
+`;
+
+exports[`Text should render default code if format is 16 and options provided without code and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <code>
+      heading text
+    </code>
+  </span>
+</div>
+`;
+
+exports[`Text should render default emphasis if format is 2 and no options provided 1`] = `
+<div>
+  <em>
+    heading text
+  </em>
+</div>
+`;
+
+exports[`Text should render default emphasis if format is 2 and no options provided and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <em>
+      heading text
+    </em>
+  </span>
+</div>
+`;
+
+exports[`Text should render default emphasis if format is 2 and options provided without emphasis 1`] = `
+<div>
+  <em>
+    heading text
+  </em>
+</div>
+`;
+
+exports[`Text should render default emphasis if format is 2 and options provided without emphasis and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <em>
+      heading text
+    </em>
+  </span>
+</div>
+`;
+
+exports[`Text should render default strikethrough if format is 4 and no options provided 1`] = `
+<div>
+  <s>
+    heading text
+  </s>
+</div>
+`;
+
+exports[`Text should render default strikethrough if format is 4 and no options provided and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <s>
+      heading text
+    </s>
+  </span>
+</div>
+`;
+
+exports[`Text should render default strikethrough if format is 4 and options provided without strikethrough 1`] = `
+<div>
+  <s>
+    heading text
+  </s>
+</div>
+`;
+
+exports[`Text should render default strikethrough if format is 4 and options provided without strikethrough and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <s>
+      heading text
+    </s>
+  </span>
+</div>
+`;
+
+exports[`Text should render default strong if format is 1 and no options provided 1`] = `
+<div>
+  <strong>
+    heading text
+  </strong>
+</div>
+`;
+
+exports[`Text should render default strong if format is 1 and no options provided and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <strong>
+      heading text
+    </strong>
+  </span>
+</div>
+`;
+
+exports[`Text should render default strong if format is 1 and options provided without strong 1`] = `
+<div>
+  <strong>
+    heading text
+  </strong>
+</div>
+`;
+
+exports[`Text should render default strong if format is 1 and options provided without strong and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <strong>
+      heading text
+    </strong>
+  </span>
+</div>
+`;
+
+exports[`Text should render default sub if format is 32 and no options provided 1`] = `
+<div>
+  <sub>
+    heading text
+  </sub>
+</div>
+`;
+
+exports[`Text should render default sub if format is 32 and no options provided and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <sub>
+      heading text
+    </sub>
+  </span>
+</div>
+`;
+
+exports[`Text should render default sub if format is 32 and options provided without subscript 1`] = `
+<div>
+  <sub>
+    heading text
+  </sub>
+</div>
+`;
+
+exports[`Text should render default sub if format is 32 and options provided without subscript and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <sub>
+      heading text
+    </sub>
+  </span>
+</div>
+`;
+
+exports[`Text should render default sup if format is 64 and no options provided 1`] = `
+<div>
+  <sup>
+    heading text
+  </sup>
+</div>
+`;
+
+exports[`Text should render default sup if format is 64 and no options provided and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <sup>
+      heading text
+    </sup>
+  </span>
+</div>
+`;
+
+exports[`Text should render default sup if format is 64 and options provided without superscript 1`] = `
+<div>
+  <sup>
+    heading text
+  </sup>
+</div>
+`;
+
+exports[`Text should render default sup if format is 64 and options provided without superscript and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <sup>
+      heading text
+    </sup>
+  </span>
+</div>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HorizontalRule should render custom render if options provided with horizontalRule 1`] = `
+<div>
+  <div>
+    Custom HR - 
+    {"type":"horizontalrule","version":1}
+  </div>
+</div>
+`;
+
+exports[`HorizontalRule should render default hr if no options provided 1`] = `
+<div>
+  <hr />
+</div>
+`;
+
+exports[`HorizontalRule should render default hr if options provided without horizontalRule 1`] = `
+<div>
+  <hr />
+</div>
+`;

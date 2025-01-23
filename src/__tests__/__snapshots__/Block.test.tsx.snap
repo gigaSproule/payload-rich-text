@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Block should not render anything if no options provided 1`] = `<div />`;
+
+exports[`Block should not render anything if options provided without block 1`] = `<div />`;
+
+exports[`Block should render custom render if options provided with block 1`] = `
+<div>
+  <div>
+    Custom Block - 
+    {"format":"","type":"block","version":2,"fields":{"some":"custom","block":"fields"}}
+  </div>
+</div>
+`;

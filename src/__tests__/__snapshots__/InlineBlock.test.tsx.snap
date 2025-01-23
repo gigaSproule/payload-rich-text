@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InlineBlock should not render anything if no options provided 1`] = `<div />`;
+
+exports[`InlineBlock should render custom render if options provided with horizontalRule 1`] = `
+<div>
+  <div>
+    <span>
+      Custom InlineBlock - 
+      {"type":"inlineBlock","version":1,"fields":{"some":"custom","block":"fields"}}
+    </span>
+  </div>
+</div>
+`;

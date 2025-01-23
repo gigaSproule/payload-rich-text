@@ -1,0 +1,849 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paragraph should not render anything if no children are provided 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is  direction is ltr 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span>
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is  direction is null 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span>
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is  direction is rtl 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"rtl","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="direction: rtl;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is center direction is ltr 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"ltr","format":"center","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: center;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is center direction is null 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":null,"format":"center","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: center;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is center direction is rtl 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"rtl","format":"center","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: center; direction: rtl;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is end direction is ltr 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"ltr","format":"end","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: end;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is end direction is null 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":null,"format":"end","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: end;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is end direction is rtl 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"rtl","format":"end","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: end; direction: rtl;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is justify direction is ltr 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"ltr","format":"justify","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: justify;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is justify direction is null 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":null,"format":"justify","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: justify;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is justify direction is rtl 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"rtl","format":"justify","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: justify; direction: rtl;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is left direction is ltr 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"ltr","format":"left","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: left;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is left direction is null 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":null,"format":"left","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: left;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is left direction is rtl 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"rtl","format":"left","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: left; direction: rtl;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is right direction is ltr 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"ltr","format":"right","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: right;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is right direction is null 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":null,"format":"right","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: right;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is right direction is rtl 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"rtl","format":"right","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: right; direction: rtl;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is start direction is ltr 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"ltr","format":"start","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: start;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is start direction is null 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":null,"format":"start","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: start;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render custom render with correct styling if options provided with paragraph and format is start direction is rtl 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Paragraph - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"direction":"rtl","format":"start","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}
+    </span>
+    <span
+      style="text-align: start; direction: rtl;"
+    >
+      heading text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is  and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is  and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is  and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is center and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is center and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is center and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is end and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is end and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is end and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is justify and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is justify and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is justify and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is left and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is left and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is left and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is right and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is right and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is right and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is start and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is start and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default inline block with correct styling if no options provided and format is start and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is  and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is  and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is  and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is center and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is center and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is center and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is end and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is end and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is end and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is justify and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is justify and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is justify and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is left and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is left and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is left and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is right and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is right and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is right and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is start and direction is ltr 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is start and direction is null 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default link with correct styling if no options provided and format is start and direction is rtl 1`] = `
+<div>
+  <p />
+</div>
+`;
+
+exports[`Paragraph should render default text if no options provided 1`] = `
+<div>
+  <p>
+    <span>
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is  and direction is ltr 1`] = `
+<div>
+  <p>
+    <span>
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is  and direction is null 1`] = `
+<div>
+  <p>
+    <span>
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is  and direction is rtl 1`] = `
+<div>
+  <p>
+    <span
+      style="direction: rtl;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is center and direction is ltr 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: center;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is center and direction is null 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: center;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is center and direction is rtl 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: center; direction: rtl;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is end and direction is ltr 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: end;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is end and direction is null 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: end;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is end and direction is rtl 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: end; direction: rtl;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is justify and direction is ltr 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: justify;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is justify and direction is null 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: justify;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is justify and direction is rtl 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: justify; direction: rtl;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is left and direction is ltr 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: left;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is left and direction is null 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: left;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is left and direction is rtl 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: left; direction: rtl;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is right and direction is ltr 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: right;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is right and direction is null 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: right;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is right and direction is rtl 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: right; direction: rtl;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is start and direction is ltr 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: start;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is start and direction is null 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: start;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render default text with correct styling if no options provided and format is start and direction is rtl 1`] = `
+<div>
+  <p>
+    <span
+      style="text-align: start; direction: rtl;"
+    >
+      heading text
+    </span>
+  </p>
+</div>
+`;

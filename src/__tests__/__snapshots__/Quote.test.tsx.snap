@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote should not render anything if there are no children 1`] = `<div />`;
+
+exports[`Quote should render custom render if options provided with quote 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Quote - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"quote","direction":null,"format":"","indent":0,"version":1}
+    </span>
+    heading text
+  </div>
+</div>
+`;
+
+exports[`Quote should render default blockquote if no options provided 1`] = `
+<div>
+  <blockquote>
+    heading text
+  </blockquote>
+</div>
+`;
+
+exports[`Quote should render default blockquote if options provided without quote 1`] = `
+<div>
+  <blockquote>
+    heading text
+  </blockquote>
+</div>
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Upload should render custom render if options provided with upload 1`] = `
+<div>
+  <div>
+    Custom Upload - 
+    {"type":"upload","format":"","version":1,"id":"id","fields":null,"relationTo":"image","value":{"id":"image-id","filename":"image.jpg","mimeType":"image/jpeg","filesize":1,"url":"https://www.example.com/image.jpg","some":"custom","block":"fields"}}
+  </div>
+</div>
+`;
+
+exports[`Upload should render default a if no options provided 1`] = `
+<div>
+  <a
+    href="https://www.example.com/image.jpg"
+  >
+    image.jpg
+  </a>
+</div>
+`;
+
+exports[`Upload should render default a if options provided without upload 1`] = `
+<div>
+  <a
+    href="https://www.example.com/image.jpg"
+  >
+    image.jpg
+  </a>
+</div>
+`;

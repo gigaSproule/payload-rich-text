@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link should not render anything if no children are provided 1`] = `
+<div>
+  <a
+    href="https://www.example.com"
+  />
+</div>
+`;
+
+exports[`Link should not render anything if no options are provided for custom link 1`] = `<div />`;
+
+exports[`Link should not render anything if no options are provided for default internal link 1`] = `<div />`;
+
+exports[`Link should render custom render if options provided with link 1`] = `
+<div>
+  <div>
+    <span>
+      Custom A - 
+      {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"link","format":"","indent":0,"version":1,"direction":"ltr","id":"id","fields":{"url":"https://www.example.com","newTab":false,"linkType":"custom"}}
+    </span>
+    heading text
+  </div>
+</div>
+`;
+
+exports[`Link should render default a if no options are provided for default custom link 1`] = `
+<div>
+  <a
+    href="https://www.example.com"
+  >
+    heading text
+  </a>
+</div>
+`;

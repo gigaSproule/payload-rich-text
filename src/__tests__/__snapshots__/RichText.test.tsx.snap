@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RichText should not render anything if there are no children 1`] = `<div />`;
+
+exports[`RichText should not render anything if unknown is a child and no options provided 1`] = `<div />`;
+
+exports[`RichText should not render anything if unknown is a child and options provided without unknown 1`] = `<div />`;
+
+exports[`RichText should render block if block is a child 1`] = `<div />`;
+
+exports[`RichText should render bullet list if bullet list is a child 1`] = `
+<div>
+  <ul
+    class="list-bullet"
+  >
+    <li
+      value="1"
+    >
+      heading text
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`RichText should render check list if check list is a child 1`] = `
+<div>
+  <ul
+    class="list-check"
+  >
+    <li
+      aria-checked="false"
+      role="checkbox"
+      tabindex="-1"
+      value="1"
+    >
+      <input
+        id="randomUUID"
+        type="checkbox"
+      />
+      <label
+        for="randomUUID"
+      >
+        heading text
+      </label>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`RichText should render custom render if unknown is a child and options provided with unknown 1`] = `
+<div>
+  <div>
+    Custom Unknown - 
+    {"type":"unknown"}
+  </div>
+</div>
+`;
+
+exports[`RichText should render heading if heading is a child 1`] = `
+<div>
+  <h1>
+    heading text
+  </h1>
+</div>
+`;
+
+exports[`RichText should render horizontal rule if horizontal rule is a child 1`] = `
+<div>
+  <hr />
+</div>
+`;
+
+exports[`RichText should render number list if number list is a child 1`] = `
+<div>
+  <ol
+    class="list-number"
+  >
+    <li
+      value="1"
+    >
+      heading text
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`RichText should render paragraph if paragraph is a child 1`] = `
+<div>
+  <p>
+    <span>
+      heading text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`RichText should render quote if quote is a child 1`] = `
+<div>
+  <blockquote>
+    heading text
+  </blockquote>
+</div>
+`;
+
+exports[`RichText should render relationship if relationship is a child 1`] = `<div />`;
+
+exports[`RichText should render upload if upload is a child 1`] = `
+<div>
+  <a
+    href="https://www.example.com/image.jpg"
+  >
+    image.jpg
+  </a>
+</div>
+`;

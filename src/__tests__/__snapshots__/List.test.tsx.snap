@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BulletList should not render anything if no sub-children provided 1`] = `<div />`;
+
+exports[`BulletList should render custom list item render with default ul if options provided without bulletList and with bulletListItem 1`] = `
+<div>
+  <ul
+    class="list-bullet"
+  >
+    <div>
+      <span>
+        Custom Bullet List Item - 
+        {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1}
+      </span>
+      heading text
+    </div>
+  </ul>
+</div>
+`;
+
+exports[`BulletList should render custom list render with default li if options provided with bulletList and without bulletListItem 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Bullet List - 
+      {"type":"list","direction":null,"format":"","indent":0,"version":1,"start":1,"listType":"bullet","children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1}],"tag":"ul"}
+    </span>
+    <li
+      value="1"
+    >
+      heading text
+    </li>
+  </div>
+</div>
+`;
+
+exports[`BulletList should render default ul with default li if no options provided 1`] = `
+<div>
+  <ul
+    class="list-bullet"
+  >
+    <li
+      value="1"
+    >
+      heading text
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`BulletList should render default ul with default li if options provided without bulletList and without bulletListItem 1`] = `
+<div>
+  <ul
+    class="list-bullet"
+  >
+    <li
+      value="1"
+    >
+      heading text
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`CheckList should not render anything if no sub-children provided 1`] = `<div />`;
+
+exports[`CheckList should render custom list item render with default ul if options provided without checkList and with checkListItem 1`] = `
+<div>
+  <ul
+    class="list-check"
+  >
+    <div>
+      <span>
+        Custom Check List Item - 
+        {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1,"checked":false}
+      </span>
+      heading text
+    </div>
+  </ul>
+</div>
+`;
+
+exports[`CheckList should render custom list render with default li if options provided with checkList and without checkListItem 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Check List - 
+      {"type":"list","direction":null,"format":"","indent":0,"version":1,"start":1,"listType":"check","children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1,"checked":false}],"tag":"ul"}
+    </span>
+    <li
+      aria-checked="false"
+      role="checkbox"
+      tabindex="-1"
+      value="1"
+    >
+      <input
+        id="randomUUID"
+        type="checkbox"
+      />
+      <label
+        for="randomUUID"
+      >
+        heading text
+      </label>
+    </li>
+  </div>
+</div>
+`;
+
+exports[`CheckList should render default ul with default li if no options provided 1`] = `
+<div>
+  <ul
+    class="list-check"
+  >
+    <li
+      aria-checked="false"
+      role="checkbox"
+      tabindex="-1"
+      value="1"
+    >
+      <input
+        id="randomUUID"
+        type="checkbox"
+      />
+      <label
+        for="randomUUID"
+      >
+        heading text
+      </label>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`CheckList should render default ul with default li if no options provided and list item checked 1`] = `
+<div>
+  <ul
+    class="list-check"
+  >
+    <li
+      aria-checked="true"
+      role="checkbox"
+      tabindex="-1"
+      value="1"
+    >
+      <input
+        checked=""
+        id="randomUUID"
+        type="checkbox"
+      />
+      <label
+        for="randomUUID"
+      >
+        heading text
+      </label>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`CheckList should render default ul with default li if options provided without checkList and without checkListItem 1`] = `
+<div>
+  <ul
+    class="list-check"
+  >
+    <li
+      aria-checked="false"
+      role="checkbox"
+      tabindex="-1"
+      value="1"
+    >
+      <input
+        id="randomUUID"
+        type="checkbox"
+      />
+      <label
+        for="randomUUID"
+      >
+        heading text
+      </label>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`List should not render anything if no children provided 1`] = `<div />`;
+
+exports[`NumberList should not render anything if no sub-children provided 1`] = `<div />`;
+
+exports[`NumberList should render custom list item render with default ol if options provided without numberList and with numberListItem 1`] = `
+<div>
+  <ol
+    class="list-number"
+  >
+    <div>
+      <span>
+        Custom Number List Item - 
+        {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1}
+      </span>
+      heading text
+    </div>
+  </ol>
+</div>
+`;
+
+exports[`NumberList should render custom list render with default li if options provided with numberList and without numberListItem 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Number List - 
+      {"type":"list","direction":null,"format":"","indent":0,"version":1,"start":1,"listType":"number","children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1}],"tag":"ol"}
+    </span>
+    <li
+      value="1"
+    >
+      heading text
+    </li>
+  </div>
+</div>
+`;
+
+exports[`NumberList should render default ol with default li if no options provided 1`] = `
+<div>
+  <ol
+    class="list-number"
+  >
+    <li
+      value="1"
+    >
+      heading text
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`NumberList should render default ol with default li if options provided without numberList and without numberListItem 1`] = `
+<div>
+  <ol
+    class="list-number"
+  >
+    <li
+      value="1"
+    >
+      heading text
+    </li>
+  </ol>
+</div>
+`;
