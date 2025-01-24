@@ -1,9 +1,7 @@
-name: "Run main workflow"
+name: "Run PR workflow"
 
 on:
-  push:
-    branches:
-      - "main"
+  pull_request:
 
 permissions:
   contents: write
@@ -36,4 +34,4 @@ jobs:
       - name: Run release
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: yarn semantic-release
+        run: yarn semantic-release --dry-run
