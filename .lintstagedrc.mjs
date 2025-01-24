@@ -1,3 +1,3 @@
 export default {
-  "*.{js,json,md}": "prettier --write",
+  "*.{js,cjs,mjs,json,md,ts,tsx}": "prettier --write",
 };
