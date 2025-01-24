@@ -35,4 +35,4 @@ jobs:
       - name: Run release
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: yarn semantic-release --dry-run
+        run: yarn semantic-release
