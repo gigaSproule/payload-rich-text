@@ -30,6 +30,8 @@ jobs:
           node-version-file: ".nvmrc"
       - name: Install dependencies
         run: yarn install
+      - name: Run build
+        run: yarn build
       - name: Run tests
         run: yarn test
       - name: Run release
