@@ -3,8 +3,11 @@ import type { Options } from "./types";
 
 export type InlineBlockData = {
   type: "inlineBlock";
-  fields: object;
   version: number;
+  fields: {
+    blockType: string;
+    [key: string]: unknown;
+  };
 };
 
 export type Props = {

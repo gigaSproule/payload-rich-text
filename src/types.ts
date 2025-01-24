@@ -20,6 +20,7 @@ import type { InlineBlockData } from "./InlineBlock";
 import type { CSSProperties } from "react";
 
 export type Options = {
+  text?: (text: string) => React.ReactNode;
   paragraph?: (
     paragraph: ParagraphData,
     children: React.ReactNode,

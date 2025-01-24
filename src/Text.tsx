@@ -20,7 +20,9 @@ export type Props = {
 export const Text = ({ data, options, style }: Props) => {
   // Format is an inclusive value, so bold and italic is 3 (1+2)
   let remainingFormat = data.format;
-  let text: React.ReactNode = data.text;
+  let text: React.ReactNode = options?.text
+    ? options.text(data.text)
+    : data.text;
   if (remainingFormat - 64 >= 0) {
     remainingFormat -= 64;
     text = options?.superscript ? (

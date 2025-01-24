@@ -6,6 +6,7 @@ export const createInlineBlockData = (
   type: "inlineBlock",
   version: 1,
   fields: {
+    blockType: "some-block-type",
     some: "custom",
     block: "fields",
   },

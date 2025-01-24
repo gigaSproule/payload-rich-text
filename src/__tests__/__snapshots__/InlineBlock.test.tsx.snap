@@ -7,7 +7,7 @@ exports[`InlineBlock should render custom render if options provided with horizo
   <div>
     <span>
       Custom InlineBlock - 
-      {"type":"inlineBlock","version":1,"fields":{"some":"custom","block":"fields"}}
+      {"type":"inlineBlock","version":1,"fields":{"blockType":"some-block-type","some":"custom","block":"fields"}}
     </span>
   </div>
 </div>

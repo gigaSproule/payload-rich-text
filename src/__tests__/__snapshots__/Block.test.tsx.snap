@@ -8,7 +8,7 @@ exports[`Block should render custom render if options provided with block 1`] = 
 <div>
   <div>
     Custom Block - 
-    {"format":"","type":"block","version":2,"fields":{"some":"custom","block":"fields"}}
+    {"format":"","type":"block","version":2,"fields":{"blockType":"some-block-type","some":"custom","block":"fields"}}
   </div>
 </div>
 `;

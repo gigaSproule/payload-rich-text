@@ -5,6 +5,7 @@ export const createBlockData = (blockData?: Partial<BlockData>): BlockData => ({
   type: "block",
   version: 2,
   fields: {
+    blockType: "some-block-type",
     some: "custom",
     block: "fields",
   },

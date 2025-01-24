@@ -363,6 +363,12 @@ exports[`Text should render custom render if format is 64 and options provided w
 </div>
 `;
 
+exports[`Text should render custom text if options provided with text 1`] = `
+<div>
+  Transformed heading text
+</div>
+`;
+
 exports[`Text should render default code if format is 16 and no options provided 1`] = `
 <div>
   <code>
@@ -600,5 +606,17 @@ exports[`Text should render default sup if format is 64 and options provided wit
       heading text
     </sup>
   </span>
+</div>
+`;
+
+exports[`Text should render text as-is if no options provided 1`] = `
+<div>
+  heading text
+</div>
+`;
+
+exports[`Text should render text as-is if options provided without text 1`] = `
+<div>
+  heading text
 </div>
 `;

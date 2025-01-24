@@ -4,7 +4,10 @@ export type BlockData = {
   type: "block";
   format: string;
   version: number;
-  fields: object;
+  fields: {
+    blockType: string;
+    [key: string]: unknown;
+  };
 };
 
 export type Props = {

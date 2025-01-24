@@ -5,6 +5,33 @@ import { Text } from "../Text";
 import { createTextData } from "./helpers/createTextData";
 
 describe("Text", () => {
+  it("should render text as-is if no options provided", () => {
+    const textData: Props["data"] = createTextData();
+    const { container } = render(<Text data={textData} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render text as-is if options provided without text", () => {
+    const textData: Props["data"] = createTextData();
+    const { container } = render(<Text data={textData} options={{}} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render custom text if options provided with text", () => {
+    const textData: Props["data"] = createTextData();
+    const { container } = render(
+      <Text
+        data={textData}
+        options={{
+          text: (text) => {
+            return `Transformed ${text}`;
+          },
+        }}
+      />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
   it("should render default sup if format is 64 and no options provided", () => {
     const textData: Props["data"] = createTextData({ format: 64 });
     const { container } = render(<Text data={textData} />);
