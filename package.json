@@ -2,6 +2,15 @@
   "name": "payload-rich-text",
   "version": "1.1.0",
   "license": "MIT",
+  "homepage": "https://github.com/gigaSproule/payload-rich-text",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigaSproule/payload-rich-text.git"
+  },
+  "author": {
+    "name": "Benjamin Sproule",
+    "email": "dev@benjaminsproule.com"
+  },
   "type": "module",
   "src": "src/index.ts",
   "main": "dist/index.js",
