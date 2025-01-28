@@ -1,7 +1,9 @@
-import type { RelationshipData } from "./Relationship";
-import { Relationship } from "./Relationship";
-import type { UploadData } from "./Upload";
-import { Upload } from "./Upload";
+import {
+  GraphQlRelationshipData,
+  Relationship,
+  RelationshipData,
+} from "./Relationship";
+import { GraphQlUploadData, Upload, UploadData } from "./Upload";
 import type { BulletListData, CheckListData, NumberListData } from "./List";
 import { List } from "./List";
 import type { ParagraphData } from "./Paragraph";
@@ -13,22 +15,34 @@ import { Quote } from "./Quote";
 import type { HorizontalRuleData } from "./HorizontalRule";
 import { HorizontalRule } from "./HorizontalRule";
 import type { Options } from "./types";
-import type { BlockData } from "./Block";
-import { Block } from "./Block";
+import { Block, BlockData, GraphQlBlockData } from "./Block";
 
-export type RichTextRoot = {
-  children: (
-    | ParagraphData
-    | CheckListData
-    | BulletListData
-    | NumberListData
-    | HeadingData
-    | HorizontalRuleData
-    | QuoteData
-    | UploadData
-    | RelationshipData
-    | BlockData
-  )[];
+export type RichTextRoot<T extends "strict" | "graphql" = "strict"> = {
+  children: T extends "strict"
+    ? (
+        | ParagraphData
+        | CheckListData
+        | BulletListData
+        | NumberListData
+        | HeadingData
+        | HorizontalRuleData
+        | QuoteData
+        | UploadData
+        | RelationshipData
+        | BlockData
+      )[]
+    : (
+        | ParagraphData
+        | CheckListData
+        | BulletListData
+        | NumberListData
+        | HeadingData
+        | HorizontalRuleData
+        | QuoteData
+        | GraphQlUploadData
+        | GraphQlRelationshipData
+        | GraphQlBlockData
+      )[];
   direction: "ltr" | "rtl" | null;
   format: "";
   indent: 0;
@@ -36,12 +50,12 @@ export type RichTextRoot = {
   version: 1;
 };
 
-export type RichTextData = {
-  root: RichTextRoot;
+export type RichTextData<T extends "strict" | "graphql" = "strict"> = {
+  root: RichTextRoot<T>;
 };
 
 export type Props = {
-  data: RichTextData;
+  data: RichTextData | RichTextData<"graphql">;
   options?: Options;
 };
 

@@ -11,31 +11,40 @@ export type DefaultCustomLinkData = Omit<LinkData, "fields"> & {
   };
 };
 
-export type DefaultInternalLinkData = Omit<LinkData, "fields"> & {
+export type DefaultInternalLinkData<
+  T extends {
+    id: string;
+    [key: string]: unknown;
+  } = {
+    id: string;
+    [key: string]: unknown;
+  },
+> = Omit<LinkData, "fields"> & {
   fields: {
     url: string;
     doc: {
       relationTo: string;
-      value:
-        | {
-            id: string;
-            [key: string]: unknown;
-          }
-        | string;
+      value: T | string;
     };
     newTab: boolean;
     linkType: "internal";
   };
 };
 
-export type LinkData = {
+export type LinkData<
+  T extends {
+    [key: string]: unknown;
+  } = {
+    [key: string]: unknown;
+  },
+> = {
   type: "link";
   format: string;
   indent: number;
-  version: number;
+  version?: number;
   direction: "ltr" | "rtl" | null;
   id: string;
-  fields: object;
+  fields: T;
   children: TextData[];
 };
 

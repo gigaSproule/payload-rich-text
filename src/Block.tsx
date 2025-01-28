@@ -1,17 +1,33 @@
 import type { Options } from "./types";
 
-export type BlockData = {
+export type PayloadBlockFields = {
+  blockType: string;
+  [key: string]: unknown;
+};
+
+export type GraphQlPayloadBlockFields = {
+  blockType?: string;
+  [key: string]: unknown;
+};
+
+export type BlockData<T extends PayloadBlockFields = PayloadBlockFields> = {
   type: "block";
   format: string;
   version: number;
-  fields: {
-    blockType: string;
-    [key: string]: unknown;
-  };
+  fields: T;
+};
+
+export type GraphQlBlockData<
+  T extends GraphQlPayloadBlockFields = GraphQlPayloadBlockFields,
+> = {
+  type: "block";
+  format: string;
+  version?: number;
+  fields: T;
 };
 
 export type Props = {
-  data: BlockData;
+  data: BlockData | GraphQlBlockData;
   options?: Options;
 };
 
