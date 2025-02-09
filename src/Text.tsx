@@ -43,6 +43,14 @@ export const Text = ({ data, options, style }: Props) => {
     remainingFormat -= 16;
     text = options?.code ? options.code(text, style) : <code>{text}</code>;
   }
+  if (remainingFormat - 8 >= 0) {
+    remainingFormat -= 8;
+    text = options?.underline ? (
+      options.underline(text, style)
+    ) : (
+      <span style={{ textDecoration: "underline" }}>{text}</span>
+    );
+  }
   if (remainingFormat - 4 >= 0) {
     remainingFormat -= 4;
     text = options?.strikethrough ? (
@@ -56,7 +64,6 @@ export const Text = ({ data, options, style }: Props) => {
     text = options?.emphasis ? options.emphasis(text, style) : <em>{text}</em>;
   }
   if (remainingFormat - 1 >= 0) {
-    remainingFormat -= 1;
     text = options?.strong ? (
       options.strong(text, style)
     ) : (

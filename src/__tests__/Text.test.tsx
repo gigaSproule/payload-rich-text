@@ -245,6 +245,77 @@ describe("Text", () => {
     expect(container).toMatchSnapshot();
   });
 
+  it("should render default underline if format is 8 and no options provided", () => {
+    const textData: Props["data"] = createTextData({ format: 8 });
+    const { container } = render(<Text data={textData} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render default underline if format is 8 and no options provided and style underline", () => {
+    const textData: Props["data"] = createTextData({ format: 8 });
+    const { container } = render(
+      <Text data={textData} style={{ direction: "rtl" }} />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render default underline if format is 8 and options provided without underline", () => {
+    const textData: Props["data"] = createTextData({ format: 8 });
+    const { container } = render(<Text data={textData} options={{}} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render default underline if format is 8 and options provided without underline and style provided", () => {
+    const textData: Props["data"] = createTextData({ format: 8 });
+    const { container } = render(
+      <Text data={textData} options={{}} style={{ direction: "rtl" }} />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render custom render if format is 8 and options provided with underline", () => {
+    const textData: Props["data"] = createTextData({ format: 8 });
+    const { container } = render(
+      <Text
+        data={textData}
+        options={{
+          underline: (children, style) => {
+            return (
+              <div>
+                <span>Custom Underline</span>
+                {children}
+                {JSON.stringify(style)}
+              </div>
+            );
+          },
+        }}
+      />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render custom render if format is 8 and options provided with underline and style provided", () => {
+    const textData: Props["data"] = createTextData({ format: 8 });
+    const { container } = render(
+      <Text
+        data={textData}
+        options={{
+          strikethrough: (children, style) => {
+            return (
+              <div>
+                <span>Custom Strikethrough</span>
+                {children}
+                {JSON.stringify(style)}
+              </div>
+            );
+          },
+        }}
+        style={{ direction: "rtl" }}
+      />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
   it("should render default strikethrough if format is 4 and no options provided", () => {
     const textData: Props["data"] = createTextData({ format: 4 });
     const { container } = render(<Text data={textData} />);
@@ -527,36 +598,36 @@ describe("Text", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should render all default elements if format is 111 and options not provided", () => {
-    const textData: Props["data"] = createTextData({ format: 111 });
+  it("should render all default elements if format is 127 and options not provided", () => {
+    const textData: Props["data"] = createTextData({ format: 127 });
     const { container } = render(<Text data={textData} />);
     expect(container).toMatchSnapshot();
   });
 
-  it("should render all default elements if format is 111 and options not provided and style provided", () => {
-    const textData: Props["data"] = createTextData({ format: 111 });
+  it("should render all default elements if format is 127 and options not provided and style provided", () => {
+    const textData: Props["data"] = createTextData({ format: 127 });
     const { container } = render(
       <Text data={textData} style={{ direction: "rtl" }} />,
     );
     expect(container).toMatchSnapshot();
   });
 
-  it("should render all default elements if format is 111 and options provided without any custom functions", () => {
-    const textData: Props["data"] = createTextData({ format: 111 });
+  it("should render all default elements if format is 127 and options provided without any custom functions", () => {
+    const textData: Props["data"] = createTextData({ format: 127 });
     const { container } = render(<Text data={textData} options={{}} />);
     expect(container).toMatchSnapshot();
   });
 
-  it("should render all default elements if format is 111 and options not provided without any custom functions and style provided", () => {
-    const textData: Props["data"] = createTextData({ format: 111 });
+  it("should render all default elements if format is 127 and options not provided without any custom functions and style provided", () => {
+    const textData: Props["data"] = createTextData({ format: 127 });
     const { container } = render(
       <Text data={textData} options={{}} style={{ direction: "rtl" }} />,
     );
     expect(container).toMatchSnapshot();
   });
 
-  it("should render all custom renders if format is 111 and options provided with all custom functions", () => {
-    const textData: Props["data"] = createTextData({ format: 111 });
+  it("should render all custom renders if format is 127 and options provided with all custom functions", () => {
+    const textData: Props["data"] = createTextData({ format: 127 });
     const { container } = render(
       <Text
         data={textData}
@@ -630,8 +701,8 @@ describe("Text", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should render all custom renders if format is 111 and options not provided with all custom functions and style provided", () => {
-    const textData: Props["data"] = createTextData({ format: 111 });
+  it("should render all custom renders if format is 127 and options not provided with all custom functions and style provided", () => {
+    const textData: Props["data"] = createTextData({ format: 127 });
     const { container } = render(
       <Text
         data={textData}
@@ -658,6 +729,15 @@ describe("Text", () => {
             return (
               <div>
                 <span>Custom Code</span>
+                {children}
+                {JSON.stringify(style)}
+              </div>
+            );
+          },
+          underline: (children, style) => {
+            return (
+              <div>
+                <span>Custom Underline</span>
                 {children}
                 {JSON.stringify(style)}
               </div>

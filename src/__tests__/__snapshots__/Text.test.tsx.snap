@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text should render all custom renders if format is 111 and options not provided with all custom functions and style provided 1`] = `
+exports[`Text should render all custom renders if format is 127 and options not provided with all custom functions and style provided 1`] = `
 <div>
   <div>
     <span>
@@ -20,13 +20,25 @@ exports[`Text should render all custom renders if format is 111 and options not 
           </span>
           <div>
             <span>
-              Custom Subscript
+              Custom Underline
             </span>
             <div>
               <span>
-                Custom Superscript
+                Custom Code
               </span>
-              heading text
+              <div>
+                <span>
+                  Custom Subscript
+                </span>
+                <div>
+                  <span>
+                    Custom Superscript
+                  </span>
+                  heading text
+                  {"direction":"rtl"}
+                </div>
+                {"direction":"rtl"}
+              </div>
               {"direction":"rtl"}
             </div>
             {"direction":"rtl"}
@@ -42,7 +54,7 @@ exports[`Text should render all custom renders if format is 111 and options not 
 </div>
 `;
 
-exports[`Text should render all custom renders if format is 111 and options provided with all custom functions 1`] = `
+exports[`Text should render all custom renders if format is 127 and options provided with all custom functions 1`] = `
 <div>
   <div>
     <span>
@@ -60,17 +72,26 @@ exports[`Text should render all custom renders if format is 111 and options prov
           <span>
             Custom Strikethrough
           </span>
-          <div>
-            <span>
-              Custom Subscript
-            </span>
+          <span
+            style="text-decoration: underline;"
+          >
             <div>
               <span>
-                Custom Superscript
+                Custom Code
               </span>
-              heading text
+              <div>
+                <span>
+                  Custom Subscript
+                </span>
+                <div>
+                  <span>
+                    Custom Superscript
+                  </span>
+                  heading text
+                </div>
+              </div>
             </div>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -78,23 +99,29 @@ exports[`Text should render all custom renders if format is 111 and options prov
 </div>
 `;
 
-exports[`Text should render all default elements if format is 111 and options not provided 1`] = `
+exports[`Text should render all default elements if format is 127 and options not provided 1`] = `
 <div>
   <strong>
     <em>
       <s>
-        <sub>
-          <sup>
-            heading text
-          </sup>
-        </sub>
+        <span
+          style="text-decoration: underline;"
+        >
+          <code>
+            <sub>
+              <sup>
+                heading text
+              </sup>
+            </sub>
+          </code>
+        </span>
       </s>
     </em>
   </strong>
 </div>
 `;
 
-exports[`Text should render all default elements if format is 111 and options not provided and style provided 1`] = `
+exports[`Text should render all default elements if format is 127 and options not provided and style provided 1`] = `
 <div>
   <span
     style="direction: rtl;"
@@ -102,11 +129,17 @@ exports[`Text should render all default elements if format is 111 and options no
     <strong>
       <em>
         <s>
-          <sub>
-            <sup>
-              heading text
-            </sup>
-          </sub>
+          <span
+            style="text-decoration: underline;"
+          >
+            <code>
+              <sub>
+                <sup>
+                  heading text
+                </sup>
+              </sub>
+            </code>
+          </span>
         </s>
       </em>
     </strong>
@@ -114,7 +147,7 @@ exports[`Text should render all default elements if format is 111 and options no
 </div>
 `;
 
-exports[`Text should render all default elements if format is 111 and options not provided without any custom functions and style provided 1`] = `
+exports[`Text should render all default elements if format is 127 and options not provided without any custom functions and style provided 1`] = `
 <div>
   <span
     style="direction: rtl;"
@@ -122,11 +155,17 @@ exports[`Text should render all default elements if format is 111 and options no
     <strong>
       <em>
         <s>
-          <sub>
-            <sup>
-              heading text
-            </sup>
-          </sub>
+          <span
+            style="text-decoration: underline;"
+          >
+            <code>
+              <sub>
+                <sup>
+                  heading text
+                </sup>
+              </sub>
+            </code>
+          </span>
         </s>
       </em>
     </strong>
@@ -134,16 +173,22 @@ exports[`Text should render all default elements if format is 111 and options no
 </div>
 `;
 
-exports[`Text should render all default elements if format is 111 and options provided without any custom functions 1`] = `
+exports[`Text should render all default elements if format is 127 and options provided without any custom functions 1`] = `
 <div>
   <strong>
     <em>
       <s>
-        <sub>
-          <sup>
-            heading text
-          </sup>
-        </sub>
+        <span
+          style="text-decoration: underline;"
+        >
+          <code>
+            <sub>
+              <sup>
+                heading text
+              </sup>
+            </sub>
+          </code>
+        </span>
       </s>
     </em>
   </strong>
@@ -278,6 +323,31 @@ exports[`Text should render custom render if format is 4 and options provided wi
       heading text
       {"direction":"rtl"}
     </div>
+  </span>
+</div>
+`;
+
+exports[`Text should render custom render if format is 8 and options provided with underline 1`] = `
+<div>
+  <div>
+    <span>
+      Custom Underline
+    </span>
+    heading text
+  </div>
+</div>
+`;
+
+exports[`Text should render custom render if format is 8 and options provided with underline and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <span
+      style="text-decoration: underline;"
+    >
+      heading text
+    </span>
   </span>
 </div>
 `;
@@ -605,6 +675,54 @@ exports[`Text should render default sup if format is 64 and options provided wit
     <sup>
       heading text
     </sup>
+  </span>
+</div>
+`;
+
+exports[`Text should render default underline if format is 8 and no options provided 1`] = `
+<div>
+  <span
+    style="text-decoration: underline;"
+  >
+    heading text
+  </span>
+</div>
+`;
+
+exports[`Text should render default underline if format is 8 and no options provided and style underline 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <span
+      style="text-decoration: underline;"
+    >
+      heading text
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Text should render default underline if format is 8 and options provided without underline 1`] = `
+<div>
+  <span
+    style="text-decoration: underline;"
+  >
+    heading text
+  </span>
+</div>
+`;
+
+exports[`Text should render default underline if format is 8 and options provided without underline and style provided 1`] = `
+<div>
+  <span
+    style="direction: rtl;"
+  >
+    <span
+      style="text-decoration: underline;"
+    >
+      heading text
+    </span>
   </span>
 </div>
 `;
