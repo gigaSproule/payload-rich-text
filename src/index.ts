@@ -6,6 +6,7 @@ export type { BlockData, GraphQlBlockData } from "./Block";
 export type { HeadingData } from "./Heading";
 export type { HorizontalRuleData } from "./HorizontalRule";
 export type { InlineBlockData, GraphQlInlineBlockData } from "./InlineBlock";
+export type { LineBreakData } from "./LineBreak";
 export type { LinkData } from "./Link";
 export type { ListData } from "./List";
 export type { ParagraphData } from "./Paragraph";

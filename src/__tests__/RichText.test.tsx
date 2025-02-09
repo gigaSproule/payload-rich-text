@@ -18,6 +18,7 @@ import { createBlockData } from "./helpers/createBlockData";
 import { createHeadingData } from "./helpers/createHeadingData";
 import { createHorizontalRuleData } from "./helpers/createHorizontalRuleData";
 import { createUploadData } from "./helpers/createUploadData";
+import { createLineBreakData } from "./helpers/createLineBreakData";
 
 const originalCrypto = global.crypto;
 
@@ -58,36 +59,6 @@ describe("RichText", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should render check list if check list is a child", () => {
-    const richTextData: Props["data"] = createRichTextData({
-      root: createRichTextRoot({
-        children: [createCheckListData()],
-      }),
-    });
-    const { container } = render(<RichText data={richTextData} />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it("should render bullet list if bullet list is a child", () => {
-    const richTextData: Props["data"] = createRichTextData({
-      root: createRichTextRoot({
-        children: [createBulletListData()],
-      }),
-    });
-    const { container } = render(<RichText data={richTextData} />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it("should render number list if number list is a child", () => {
-    const richTextData: Props["data"] = createRichTextData({
-      root: createRichTextRoot({
-        children: [createNumberListData()],
-      }),
-    });
-    const { container } = render(<RichText data={richTextData} />);
-    expect(container).toMatchSnapshot();
-  });
-
   it("should render heading if heading is a child", () => {
     const richTextData: Props["data"] = createRichTextData({
       root: createRichTextRoot({
@@ -108,6 +79,46 @@ describe("RichText", () => {
     expect(container).toMatchSnapshot();
   });
 
+  it("should render line break if line break is a child", () => {
+    const richTextData: Props["data"] = createRichTextData({
+      root: createRichTextRoot({
+        children: [createLineBreakData()],
+      }),
+    });
+    const { container } = render(<RichText data={richTextData} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render bullet list if bullet list is a child", () => {
+    const richTextData: Props["data"] = createRichTextData({
+      root: createRichTextRoot({
+        children: [createBulletListData()],
+      }),
+    });
+    const { container } = render(<RichText data={richTextData} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render check list if check list is a child", () => {
+    const richTextData: Props["data"] = createRichTextData({
+      root: createRichTextRoot({
+        children: [createCheckListData()],
+      }),
+    });
+    const { container } = render(<RichText data={richTextData} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render number list if number list is a child", () => {
+    const richTextData: Props["data"] = createRichTextData({
+      root: createRichTextRoot({
+        children: [createNumberListData()],
+      }),
+    });
+    const { container } = render(<RichText data={richTextData} />);
+    expect(container).toMatchSnapshot();
+  });
+
   it("should render quote if quote is a child", () => {
     const richTextData: Props["data"] = createRichTextData({
       root: createRichTextRoot({
@@ -118,20 +129,20 @@ describe("RichText", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should render upload if upload is a child", () => {
+  it("should render relationship if relationship is a child", () => {
     const richTextData: Props["data"] = createRichTextData({
       root: createRichTextRoot({
-        children: [createUploadData()],
+        children: [createRelationshipData()],
       }),
     });
     const { container } = render(<RichText data={richTextData} />);
     expect(container).toMatchSnapshot();
   });
 
-  it("should render relationship if relationship is a child", () => {
+  it("should render upload if upload is a child", () => {
     const richTextData: Props["data"] = createRichTextData({
       root: createRichTextRoot({
-        children: [createRelationshipData()],
+        children: [createUploadData()],
       }),
     });
     const { container } = render(<RichText data={richTextData} />);

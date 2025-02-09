@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LineBreak should render custom render if options provided with lineBreak 1`] = `
+<div>
+  <div>
+    Custom BR - 
+    {"type":"linebreak","version":1}
+  </div>
+</div>
+`;
+
+exports[`LineBreak should render default br if no options provided 1`] = `
+<div>
+  <br />
+</div>
+`;
+
+exports[`LineBreak should render default br if options provided without lineBreak 1`] = `
+<div>
+  <br />
+</div>
+`;

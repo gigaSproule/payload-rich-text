@@ -18,13 +18,14 @@ import type { LinkData } from "./Link";
 import { BlockData, GraphQlBlockData } from "./Block";
 import { GraphQlInlineBlockData, InlineBlockData } from "./InlineBlock";
 import type { CSSProperties } from "react";
+import { LineBreakData } from "./LineBreak";
 
 export type Options = {
-  text?: (text: string) => React.ReactNode;
   paragraph?: (
     paragraph: ParagraphData,
     children: React.ReactNode,
   ) => React.ReactNode;
+  text?: (text: string) => React.ReactNode;
   superscript?: (
     children: React.ReactNode,
     style?: CSSProperties,
@@ -54,14 +55,21 @@ export type Options = {
     children: React.ReactNode,
     style?: CSSProperties,
   ) => React.ReactNode;
-  numberList?: (
-    numberList: NumberListData,
+  link?: (
+    link: LinkData,
+    children: React.ReactNode,
+    style?: CSSProperties,
+  ) => React.ReactNode;
+  inlineBlock?: (
+    inlineBlock: InlineBlockData | GraphQlInlineBlockData,
+    style?: CSSProperties,
+  ) => React.ReactNode;
+  heading?: (
+    heading: HeadingData,
     children: React.ReactNode,
   ) => React.ReactNode;
-  numberListItem?: (
-    numberListItem: NumberListItem,
-    children: React.ReactNode,
-  ) => React.ReactNode;
+  horizontalRule?: (horizontalRule: HorizontalRuleData) => React.ReactNode;
+  lineBreak?: (lineBreak: LineBreakData) => React.ReactNode;
   bulletList?: (
     bulletList: BulletListData,
     children: React.ReactNode,
@@ -78,25 +86,19 @@ export type Options = {
     checkListItem: CheckListItem,
     children: React.ReactNode,
   ) => React.ReactNode;
-  heading?: (
-    heading: HeadingData,
+  numberList?: (
+    numberList: NumberListData,
     children: React.ReactNode,
   ) => React.ReactNode;
-  horizontalRule?: (horizontalRule: HorizontalRuleData) => React.ReactNode;
+  numberListItem?: (
+    numberListItem: NumberListItem,
+    children: React.ReactNode,
+  ) => React.ReactNode;
   quote?: (quote: QuoteData, children: React.ReactNode) => React.ReactNode;
-  upload?: (upload: UploadData | GraphQlUploadData) => React.ReactNode;
+  block?: (block: BlockData | GraphQlBlockData) => React.ReactNode;
   relationship?: (
     relationship: RelationshipData | GraphQlRelationshipData,
   ) => React.ReactNode;
-  link?: (
-    link: LinkData,
-    children: React.ReactNode,
-    style?: CSSProperties,
-  ) => React.ReactNode;
-  block?: (block: BlockData | GraphQlBlockData) => React.ReactNode;
-  inlineBlock?: (
-    inlineBlock: InlineBlockData | GraphQlInlineBlockData,
-    style?: CSSProperties,
-  ) => React.ReactNode;
+  upload?: (upload: UploadData | GraphQlUploadData) => React.ReactNode;
   unknown?: (unknown: unknown) => React.ReactNode;
 };

@@ -16,6 +16,7 @@ import type { HorizontalRuleData } from "./HorizontalRule";
 import { HorizontalRule } from "./HorizontalRule";
 import type { Options } from "./types";
 import { Block, BlockData, GraphQlBlockData } from "./Block";
+import { LineBreak, LineBreakData } from "./LineBreak";
 
 export type RichTextRoot<T extends "strict" | "graphql" = "strict"> = {
   children: T extends "strict"
@@ -26,6 +27,7 @@ export type RichTextRoot<T extends "strict" | "graphql" = "strict"> = {
         | NumberListData
         | HeadingData
         | HorizontalRuleData
+        | LineBreakData
         | QuoteData
         | UploadData
         | RelationshipData
@@ -38,6 +40,7 @@ export type RichTextRoot<T extends "strict" | "graphql" = "strict"> = {
         | NumberListData
         | HeadingData
         | HorizontalRuleData
+        | LineBreakData
         | QuoteData
         | GraphQlUploadData
         | GraphQlRelationshipData
@@ -67,9 +70,6 @@ export const RichText = ({ data, options }: Props) => {
           case "paragraph": {
             return <Paragraph key={index} data={child} options={options} />;
           }
-          case "list": {
-            return <List key={index} data={child} options={options} />;
-          }
           case "heading": {
             return <Heading key={index} data={child} options={options} />;
           }
@@ -78,17 +78,23 @@ export const RichText = ({ data, options }: Props) => {
               <HorizontalRule key={index} data={child} options={options} />
             );
           }
+          case "linebreak": {
+            return <LineBreak key={index} data={child} options={options} />;
+          }
+          case "list": {
+            return <List key={index} data={child} options={options} />;
+          }
           case "quote": {
             return <Quote key={index} data={child} options={options} />;
           }
-          case "upload": {
-            return <Upload key={index} data={child} options={options} />;
+          case "block": {
+            return <Block key={index} data={child} options={options} />;
           }
           case "relationship": {
             return <Relationship key={index} data={child} options={options} />;
           }
-          case "block": {
-            return <Block key={index} data={child} options={options} />;
+          case "upload": {
+            return <Upload key={index} data={child} options={options} />;
           }
           default: {
             return options?.unknown ? options.unknown(child) : undefined;
