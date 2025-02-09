@@ -1241,7 +1241,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.26.0":
+"@babel/preset-env@npm:^7.26.8":
   version: 7.26.8
   resolution: "@babel/preset-env@npm:7.26.8"
   dependencies:
@@ -1459,7 +1459,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^19.6.1":
+"@commitlint/cli@npm:^19.7.1":
   version: 19.7.1
   resolution: "@commitlint/cli@npm:19.7.1"
   dependencies:
@@ -1483,7 +1483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-angular@npm:^19.7.0":
+"@commitlint/config-angular@npm:^19.7.1":
   version: 19.7.1
   resolution: "@commitlint/config-angular@npm:19.7.1"
   dependencies:
@@ -1720,7 +1720,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.20.0, @eslint/js@npm:^9.18.0":
+"@eslint/js@npm:9.20.0, @eslint/js@npm:^9.20.0":
   version: 9.20.0
   resolution: "@eslint/js@npm:9.20.0"
   checksum: 10c0/10e7b5b9e628b5192e8fc6b0ecd27cf48322947e83e999ff60f9f9e44ac8d499138bcb9383cbfa6e51e780d53b4e76ccc2d1753b108b7173b8404fd484d37328
@@ -2533,7 +2533,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/exec@npm:^7.0.0":
+"@semantic-release/exec@npm:^7.0.3":
   version: 7.0.3
   resolution: "@semantic-release/exec@npm:7.0.3"
   dependencies:
@@ -4941,7 +4941,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.18.0":
+"eslint@npm:^9.20.0":
   version: 9.20.0
   resolution: "eslint@npm:9.20.0"
   dependencies:
@@ -7472,7 +7472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^15.4.2":
+"lint-staged@npm:^15.4.3":
   version: 15.4.3
   resolution: "lint-staged@npm:15.4.3"
   dependencies:
@@ -8911,15 +8911,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "payload-rich-text@workspace:."
   dependencies:
-    "@babel/preset-env": "npm:^7.26.0"
+    "@babel/preset-env": "npm:^7.26.8"
     "@babel/preset-react": "npm:^7.26.3"
     "@babel/preset-typescript": "npm:^7.26.0"
-    "@commitlint/cli": "npm:^19.6.1"
-    "@commitlint/config-angular": "npm:^19.7.0"
-    "@eslint/js": "npm:^9.18.0"
+    "@commitlint/cli": "npm:^19.7.1"
+    "@commitlint/config-angular": "npm:^19.7.1"
+    "@eslint/js": "npm:^9.20.0"
     "@jest/globals": "npm:^29.7.0"
     "@semantic-release/commit-analyzer": "npm:^13.0.1"
-    "@semantic-release/exec": "npm:^7.0.0"
+    "@semantic-release/exec": "npm:^7.0.3"
     "@semantic-release/git": "npm:^10.0.1"
     "@semantic-release/github": "npm:^11.0.1"
     "@semantic-release/release-notes-generator": "npm:^14.0.3"
@@ -8930,7 +8930,7 @@ __metadata:
     "@types/react": "npm:^19.0.8"
     "@types/react-dom": "npm:^19.0.3"
     babel-jest: "npm:^29.7.0"
-    eslint: "npm:^9.18.0"
+    eslint: "npm:^9.20.0"
     eslint-config-prettier: "npm:^10.0.1"
     eslint-plugin-prettier: "npm:^5.2.3"
     eslint-plugin-react: "npm:^7.37.4"
@@ -8940,15 +8940,15 @@ __metadata:
     husky: "npm:^9.1.7"
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
-    lint-staged: "npm:^15.4.2"
-    prettier: "npm:^3.4.2"
+    lint-staged: "npm:^15.4.3"
+    prettier: "npm:^3.5.0"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
     react-test-renderer: "npm:^19.0.0"
-    semantic-release: "npm:^24.2.1"
+    semantic-release: "npm:^24.2.2"
     semantic-release-replace-plugin: "npm:^1.2.7"
     typescript: "npm:^5.7.3"
-    typescript-eslint: "npm:^8.21.0"
+    typescript-eslint: "npm:^8.23.0"
     yalc: "npm:1.0.0-pre.53"
   peerDependencies:
     react: ^19.0.0
@@ -9045,7 +9045,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.4.2":
+"prettier@npm:^3.5.0":
   version: 3.5.0
   resolution: "prettier@npm:3.5.0"
   bin:
@@ -9732,7 +9732,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:^24.2.1":
+"semantic-release@npm:^24.2.2":
   version: 24.2.2
   resolution: "semantic-release@npm:24.2.2"
   dependencies:
@@ -10736,7 +10736,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.21.0":
+"typescript-eslint@npm:^8.23.0":
   version: 8.23.0
   resolution: "typescript-eslint@npm:8.23.0"
   dependencies:
