@@ -34,6 +34,10 @@ export type Options = {
     style?: CSSProperties,
   ) => React.ReactNode;
   code?: (children: React.ReactNode, style?: CSSProperties) => React.ReactNode;
+  underline?: (
+    children: React.ReactNode,
+    style?: CSSProperties,
+  ) => React.ReactNode;
   strikethrough?: (
     children: React.ReactNode,
     style?: CSSProperties,
