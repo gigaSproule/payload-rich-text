@@ -10,6 +10,7 @@ import {
   createNumberListData,
   createNumberListItem,
 } from "./helpers/createListData";
+import { createLinkData } from "./helpers/createLinkData";
 
 const originalCrypto = global.crypto;
 
@@ -97,6 +98,14 @@ describe("NumberList", () => {
         }}
       />,
     );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render list item link if list item is a link", () => {
+    const listData: Props["data"] = createNumberListData({
+      children: [createNumberListItem({ children: [createLinkData()] })],
+    });
+    const { container } = render(<List data={listData} />);
     expect(container).toMatchSnapshot();
   });
 
@@ -216,6 +225,14 @@ describe("CheckList", () => {
     expect(container).toMatchSnapshot();
   });
 
+  it("should render list item link if list item is a link", () => {
+    const listData: Props["data"] = createCheckListData({
+      children: [createCheckListItem({ children: [createLinkData()] })],
+    });
+    const { container } = render(<List data={listData} />);
+    expect(container).toMatchSnapshot();
+  });
+
   it("should render list with sub lists if sub lists are provided", () => {
     const listData: Props["data"] = createCheckListData({
       children: [
@@ -305,6 +322,14 @@ describe("BulletList", () => {
         }}
       />,
     );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render list item link if list item is a link", () => {
+    const listData: Props["data"] = createBulletListData({
+      children: [createBulletListItem({ children: [createLinkData()] })],
+    });
+    const { container } = render(<List data={listData} />);
     expect(container).toMatchSnapshot();
   });
 

@@ -2,6 +2,7 @@ import type { TextData } from "./Text";
 import { Text } from "./Text";
 import type { Options } from "./types";
 import { CSSProperties } from "react";
+import { Link, LinkData } from "./Link";
 
 export type ListItem = {
   indent: number;
@@ -13,15 +14,15 @@ export type ListItem = {
 };
 
 export type BulletListItem = ListItem & {
-  children: (TextData | BulletListData)[];
+  children: (TextData | LinkData | BulletListData)[];
 };
 
 export type NumberListItem = ListItem & {
-  children: (TextData | NumberListData)[];
+  children: (TextData | LinkData | NumberListData)[];
 };
 
 export type CheckListItem = ListItem & {
-  children: (TextData | CheckListData)[];
+  children: (TextData | LinkData | CheckListData)[];
   checked: boolean;
 };
 
@@ -73,6 +74,8 @@ export const List = ({ data, options, level = 0 }: Props) => {
             return (
               <Text key={listItem.text} data={listItem} options={options} />
             );
+          } else if (listItem.type === "link") {
+            return <Link key={listItem.id} data={listItem} options={options} />;
           } else {
             return (
               <List
@@ -130,6 +133,8 @@ export const List = ({ data, options, level = 0 }: Props) => {
             return (
               <Text key={listItem.text} data={listItem} options={options} />
             );
+          } else if (listItem.type === "link") {
+            return <Link key={listItem.id} data={listItem} options={options} />;
           } else {
             return <List key={index} data={listItem} options={options} />;
           }
@@ -164,6 +169,8 @@ export const List = ({ data, options, level = 0 }: Props) => {
             return (
               <Text key={listItem.text} data={listItem} options={options} />
             );
+          } else if (listItem.type === "link") {
+            return <Link key={listItem.id} data={listItem} options={options} />;
           } else {
             return <List key={index} data={listItem} options={options} />;
           }

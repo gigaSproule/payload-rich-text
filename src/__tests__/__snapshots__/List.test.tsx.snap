@@ -10,7 +10,7 @@ exports[`BulletList should render custom list item render with default ul if opt
     <div>
       <span>
         Custom Bullet List Item - 
-        {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1}
+        {"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1,"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}]}
       </span>
       heading text
     </div>
@@ -23,7 +23,7 @@ exports[`BulletList should render custom list render with default li if options 
   <div>
     <span>
       Custom Bullet List - 
-      {"type":"list","direction":null,"format":"","indent":0,"version":1,"start":1,"listType":"bullet","children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1}],"tag":"ul"}
+      {"type":"list","direction":null,"format":"","indent":0,"version":1,"start":1,"listType":"bullet","children":[{"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1,"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}]}],"tag":"ul"}
     </span>
     <li
       value="1"
@@ -57,6 +57,24 @@ exports[`BulletList should render default ul with default li if options provided
       value="1"
     >
       heading text
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`BulletList should render list item link if list item is a link 1`] = `
+<div>
+  <ul
+    class="list-bullet"
+  >
+    <li
+      value="1"
+    >
+      <a
+        href="https://www.example.com"
+      >
+        heading text
+      </a>
     </li>
   </ul>
 </div>
@@ -110,7 +128,7 @@ exports[`CheckList should render custom list item render with default ul if opti
     <div>
       <span>
         Custom Check List Item - 
-        {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1,"checked":false}
+        {"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1,"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"checked":false}
       </span>
       heading text
     </div>
@@ -123,7 +141,7 @@ exports[`CheckList should render custom list render with default li if options p
   <div>
     <span>
       Custom Check List - 
-      {"type":"list","direction":null,"format":"","indent":0,"version":1,"start":1,"listType":"check","children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1,"checked":false}],"tag":"ul"}
+      {"type":"list","direction":null,"format":"","indent":0,"version":1,"start":1,"listType":"check","children":[{"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1,"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"checked":false}],"tag":"ul"}
     </span>
     <li
       aria-checked="false"
@@ -215,6 +233,35 @@ exports[`CheckList should render default ul with default li if options provided 
         for="randomUUID"
       >
         heading text
+      </label>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`CheckList should render list item link if list item is a link 1`] = `
+<div>
+  <ul
+    class="list-check"
+  >
+    <li
+      aria-checked="false"
+      role="checkbox"
+      tabindex="-1"
+      value="1"
+    >
+      <input
+        id="randomUUID"
+        type="checkbox"
+      />
+      <label
+        for="randomUUID"
+      >
+        <a
+          href="https://www.example.com"
+        >
+          heading text
+        </a>
       </label>
     </li>
   </ul>
@@ -316,7 +363,7 @@ exports[`NumberList should render custom list item render with default ol if opt
     <div>
       <span>
         Custom Number List Item - 
-        {"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1}
+        {"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1,"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}]}
       </span>
       heading text
     </div>
@@ -329,7 +376,7 @@ exports[`NumberList should render custom list render with default li if options 
   <div>
     <span>
       Custom Number List - 
-      {"type":"list","direction":null,"format":"","indent":0,"version":1,"start":1,"listType":"number","children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}],"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1}],"tag":"ol"}
+      {"type":"list","direction":null,"format":"","indent":0,"version":1,"start":1,"listType":"number","children":[{"type":"listitem","indent":0,"direction":null,"format":"","version":1,"value":1,"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"heading text","type":"text","version":1}]}],"tag":"ol"}
     </span>
     <li
       value="1"
@@ -365,6 +412,25 @@ exports[`NumberList should render default ol with default li if options provided
       value="1"
     >
       heading text
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`NumberList should render list item link if list item is a link 1`] = `
+<div>
+  <ol
+    class="list-number"
+    style="list-style: decimal;"
+  >
+    <li
+      value="1"
+    >
+      <a
+        href="https://www.example.com"
+      >
+        heading text
+      </a>
     </li>
   </ol>
 </div>

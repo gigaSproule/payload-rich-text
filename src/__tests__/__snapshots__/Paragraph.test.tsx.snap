@@ -466,127 +466,272 @@ exports[`Paragraph should render default inline block with correct styling if no
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is  and direction is ltr 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is  and direction is null 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is  and direction is rtl 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="direction: rtl;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is center and direction is ltr 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: center;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is center and direction is null 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: center;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is center and direction is rtl 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: center; direction: rtl;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is end and direction is ltr 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: end;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is end and direction is null 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: end;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is end and direction is rtl 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: end; direction: rtl;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is justify and direction is ltr 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: justify;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is justify and direction is null 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: justify;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is justify and direction is rtl 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: justify; direction: rtl;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is left and direction is ltr 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: left;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is left and direction is null 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: left;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is left and direction is rtl 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: left; direction: rtl;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is right and direction is ltr 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: right;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is right and direction is null 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: right;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is right and direction is rtl 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: right; direction: rtl;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is start and direction is ltr 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: start;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is start and direction is null 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: start;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 
 exports[`Paragraph should render default link with correct styling if no options provided and format is start and direction is rtl 1`] = `
 <div>
-  <p />
+  <p>
+    <a
+      href="https://www.example.com"
+      style="text-align: start; direction: rtl;"
+    >
+      heading text
+    </a>
+  </p>
 </div>
 `;
 

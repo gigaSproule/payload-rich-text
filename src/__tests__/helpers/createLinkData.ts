@@ -14,8 +14,9 @@ export const createLinkData = (linkData?: Partial<LinkData>): LinkData => ({
   direction: "ltr",
   id: "id",
   fields: {
-    some: "custom",
-    block: "fields",
+    url: "https://www.example.com",
+    newTab: false,
+    linkType: "custom",
   },
   ...linkData,
 });

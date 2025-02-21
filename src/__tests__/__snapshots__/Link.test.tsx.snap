@@ -8,7 +8,15 @@ exports[`Link should not render anything if no children are provided 1`] = `
 </div>
 `;
 
-exports[`Link should not render anything if no options are provided for custom link 1`] = `<div />`;
+exports[`Link should not render anything if no options are provided for custom link 1`] = `
+<div>
+  <a
+    href="https://www.example.com"
+  >
+    heading text
+  </a>
+</div>
+`;
 
 exports[`Link should not render anything if no options are provided for default internal link 1`] = `<div />`;
 

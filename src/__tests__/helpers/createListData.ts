@@ -21,7 +21,6 @@ const createListData = (listData?: Partial<ListData>): ListData => ({
 });
 
 const createListItem = (listItem?: Partial<ListItem>): ListItem => ({
-  children: [createTextData()],
   type: "listitem",
   indent: 0,
   direction: null,
@@ -33,7 +32,11 @@ const createListItem = (listItem?: Partial<ListItem>): ListItem => ({
 
 export const createBulletListItem = (
   bulletListItem?: Partial<BulletListItem>,
-): BulletListItem => ({ ...createListItem(), ...bulletListItem });
+): BulletListItem => ({
+  ...createListItem(),
+  children: [createTextData()],
+  ...bulletListItem,
+});
 
 export const createBulletListData = (
   bulletListData?: Partial<BulletListData>,
@@ -49,6 +52,7 @@ export const createCheckListItem = (
   checkListItem?: Partial<CheckListItem>,
 ): CheckListItem => ({
   ...createListItem(),
+  children: [createTextData()],
   checked: false,
   ...checkListItem,
 });
@@ -67,6 +71,7 @@ export const createNumberListItem = (
   numberListItem?: Partial<NumberListItem>,
 ): NumberListItem => ({
   ...createListItem(),
+  children: [createTextData()],
   ...numberListItem,
 });
 
