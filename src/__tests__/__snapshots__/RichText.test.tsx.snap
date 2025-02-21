@@ -80,6 +80,7 @@ exports[`RichText should render number list if number list is a child 1`] = `
 <div>
   <ol
     class="list-number"
+    style="list-style: decimal;"
   >
     <li
       value="1"

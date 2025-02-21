@@ -73,6 +73,7 @@ export type Options = {
   bulletList?: (
     bulletList: BulletListData,
     children: React.ReactNode,
+    level: number,
   ) => React.ReactNode;
   bulletListItem?: (
     bulletListItem: BulletListItem,
@@ -81,6 +82,7 @@ export type Options = {
   checkList?: (
     checkList: CheckListData,
     children: React.ReactNode,
+    level: number,
   ) => React.ReactNode;
   checkListItem?: (
     checkListItem: CheckListItem,
@@ -89,6 +91,7 @@ export type Options = {
   numberList?: (
     numberList: NumberListData,
     children: React.ReactNode,
+    level: number,
   ) => React.ReactNode;
   numberListItem?: (
     numberListItem: NumberListItem,

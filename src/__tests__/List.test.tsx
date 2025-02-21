@@ -99,6 +99,50 @@ describe("NumberList", () => {
     );
     expect(container).toMatchSnapshot();
   });
+
+  it("should render list with sub lists with different styling, resetting after 5 levels deep by default, if sub lists are provided", () => {
+    const listData: Props["data"] = createNumberListData({
+      children: [
+        createNumberListItem({
+          children: [
+            createNumberListData({
+              children: [
+                createNumberListItem({
+                  children: [
+                    createNumberListData({
+                      children: [
+                        createNumberListItem({
+                          children: [
+                            createNumberListData({
+                              children: [
+                                createNumberListItem({
+                                  children: [
+                                    createNumberListData({
+                                      children: [
+                                        createNumberListItem({
+                                          children: [createNumberListData()],
+                                        }),
+                                      ],
+                                    }),
+                                  ],
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          ],
+        }),
+      ],
+    });
+    const { container } = render(<List data={listData} />);
+    expect(container).toMatchSnapshot();
+  });
 });
 
 describe("CheckList", () => {
@@ -171,6 +215,34 @@ describe("CheckList", () => {
     );
     expect(container).toMatchSnapshot();
   });
+
+  it("should render list with sub lists if sub lists are provided", () => {
+    const listData: Props["data"] = createCheckListData({
+      children: [
+        createCheckListItem({
+          children: [
+            createCheckListData({
+              children: [
+                createCheckListItem({
+                  children: [
+                    createCheckListData({
+                      children: [
+                        createCheckListItem({
+                          children: [createCheckListData()],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          ],
+        }),
+      ],
+    });
+    const { container } = render(<List data={listData} />);
+    expect(container).toMatchSnapshot();
+  });
 });
 
 describe("BulletList", () => {
@@ -233,6 +305,34 @@ describe("BulletList", () => {
         }}
       />,
     );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render list with sub lists if sub lists are provided", () => {
+    const listData: Props["data"] = createBulletListData({
+      children: [
+        createBulletListItem({
+          children: [
+            createBulletListData({
+              children: [
+                createBulletListItem({
+                  children: [
+                    createBulletListData({
+                      children: [
+                        createBulletListItem({
+                          children: [createBulletListData()],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          ],
+        }),
+      ],
+    });
+    const { container } = render(<List data={listData} />);
     expect(container).toMatchSnapshot();
   });
 });

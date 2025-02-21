@@ -62,6 +62,44 @@ exports[`BulletList should render default ul with default li if options provided
 </div>
 `;
 
+exports[`BulletList should render list with sub lists if sub lists are provided 1`] = `
+<div>
+  <ul
+    class="list-bullet"
+  >
+    <li
+      value="1"
+    >
+      <ul
+        class="list-bullet"
+      >
+        <li
+          value="1"
+        >
+          <ul
+            class="list-bullet"
+          >
+            <li
+              value="1"
+            >
+              <ul
+                class="list-bullet"
+              >
+                <li
+                  value="1"
+                >
+                  heading text
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`CheckList should not render anything if no sub-children provided 1`] = `<div />`;
 
 exports[`CheckList should render custom list item render with default ul if options provided without checkList and with checkListItem 1`] = `
@@ -183,6 +221,88 @@ exports[`CheckList should render default ul with default li if options provided 
 </div>
 `;
 
+exports[`CheckList should render list with sub lists if sub lists are provided 1`] = `
+<div>
+  <ul
+    class="list-check"
+  >
+    <li
+      aria-checked="false"
+      role="checkbox"
+      tabindex="-1"
+      value="1"
+    >
+      <input
+        id="randomUUID"
+        type="checkbox"
+      />
+      <label
+        for="randomUUID"
+      >
+        <ul
+          class="list-check"
+        >
+          <li
+            aria-checked="false"
+            role="checkbox"
+            tabindex="-1"
+            value="1"
+          >
+            <input
+              id="randomUUID"
+              type="checkbox"
+            />
+            <label
+              for="randomUUID"
+            >
+              <ul
+                class="list-check"
+              >
+                <li
+                  aria-checked="false"
+                  role="checkbox"
+                  tabindex="-1"
+                  value="1"
+                >
+                  <input
+                    id="randomUUID"
+                    type="checkbox"
+                  />
+                  <label
+                    for="randomUUID"
+                  >
+                    <ul
+                      class="list-check"
+                    >
+                      <li
+                        aria-checked="false"
+                        role="checkbox"
+                        tabindex="-1"
+                        value="1"
+                      >
+                        <input
+                          id="randomUUID"
+                          type="checkbox"
+                        />
+                        <label
+                          for="randomUUID"
+                        >
+                          heading text
+                        </label>
+                      </li>
+                    </ul>
+                  </label>
+                </li>
+              </ul>
+            </label>
+          </li>
+        </ul>
+      </label>
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`List should not render anything if no children provided 1`] = `<div />`;
 
 exports[`NumberList should not render anything if no sub-children provided 1`] = `<div />`;
@@ -191,6 +311,7 @@ exports[`NumberList should render custom list item render with default ol if opt
 <div>
   <ol
     class="list-number"
+    style="list-style: decimal;"
   >
     <div>
       <span>
@@ -223,6 +344,7 @@ exports[`NumberList should render default ol with default li if no options provi
 <div>
   <ol
     class="list-number"
+    style="list-style: decimal;"
   >
     <li
       value="1"
@@ -237,11 +359,72 @@ exports[`NumberList should render default ol with default li if options provided
 <div>
   <ol
     class="list-number"
+    style="list-style: decimal;"
   >
     <li
       value="1"
     >
       heading text
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`NumberList should render list with sub lists with different styling, resetting after 5 levels deep by default, if sub lists are provided 1`] = `
+<div>
+  <ol
+    class="list-number"
+    style="list-style: decimal;"
+  >
+    <li
+      value="1"
+    >
+      <ol
+        class="list-number"
+        style="list-style: upper-alpha;"
+      >
+        <li
+          value="1"
+        >
+          <ol
+            class="list-number"
+            style="list-style: lower-alpha;"
+          >
+            <li
+              value="1"
+            >
+              <ol
+                class="list-number"
+                style="list-style: upper-roman;"
+              >
+                <li
+                  value="1"
+                >
+                  <ol
+                    class="list-number"
+                    style="list-style: lower-roman;"
+                  >
+                    <li
+                      value="1"
+                    >
+                      <ol
+                        class="list-number"
+                        style="list-style: decimal;"
+                      >
+                        <li
+                          value="1"
+                        >
+                          heading text
+                        </li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
     </li>
   </ol>
 </div>
