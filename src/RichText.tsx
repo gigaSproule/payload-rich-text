@@ -15,7 +15,10 @@ import { Quote } from "./Quote";
 import type { HorizontalRuleData } from "./HorizontalRule";
 import { HorizontalRule } from "./HorizontalRule";
 import type { Options } from "./types";
-import { Block, BlockData, GraphQlBlockData } from "./Block";
+import { Block } from "./Block";
+import type { BlockData, GraphQlBlockData } from "./Block";
+import { Table } from "./Table";
+import type { TableData } from "./Table";
 
 export type RichTextRoot<T extends "strict" | "graphql" = "strict"> = {
   children: T extends "strict"
@@ -27,6 +30,7 @@ export type RichTextRoot<T extends "strict" | "graphql" = "strict"> = {
         | HeadingData
         | HorizontalRuleData
         | QuoteData
+        | TableData
         | UploadData
         | RelationshipData
         | BlockData
@@ -39,6 +43,7 @@ export type RichTextRoot<T extends "strict" | "graphql" = "strict"> = {
         | HeadingData
         | HorizontalRuleData
         | QuoteData
+        | TableData
         | GraphQlUploadData
         | GraphQlRelationshipData
         | GraphQlBlockData
@@ -80,6 +85,9 @@ export const RichText = ({ data, options }: Props) => {
           }
           case "quote": {
             return <Quote key={index} data={child} options={options} />;
+          }
+          case "table": {
+            return <Table key={index} data={child} options={options} />;
           }
           case "upload": {
             return <Upload key={index} data={child} options={options} />;

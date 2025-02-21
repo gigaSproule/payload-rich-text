@@ -18,6 +18,7 @@ import type { LinkData } from "./Link";
 import { BlockData, GraphQlBlockData } from "./Block";
 import { GraphQlInlineBlockData, InlineBlockData } from "./InlineBlock";
 import type { CSSProperties } from "react";
+import { TableData } from "./Table";
 
 export type Options = {
   text?: (text: string) => React.ReactNode;
@@ -80,6 +81,7 @@ export type Options = {
   ) => React.ReactNode;
   horizontalRule?: (horizontalRule: HorizontalRuleData) => React.ReactNode;
   quote?: (quote: QuoteData, children: React.ReactNode) => React.ReactNode;
+  table?: (table: TableData, children: React.ReactNode) => React.ReactNode;
   upload?: (upload: UploadData | GraphQlUploadData) => React.ReactNode;
   relationship?: (
     relationship: RelationshipData | GraphQlRelationshipData,

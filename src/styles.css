@@ -1,0 +1,7 @@
+table .row-striping:nth-child(even) {
+    background-color: #E8E8E8;
+}
+
+table .row-striping:nth-child(odd) {
+    background-color: #ffffff;
+}
