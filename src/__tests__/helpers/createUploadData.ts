@@ -1,4 +1,4 @@
-import { UploadData } from "../../Upload";
+import type { UploadData } from "../../Upload";
 
 export const createUploadData = (
   uploadData?: Partial<UploadData>,

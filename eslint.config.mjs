@@ -5,6 +5,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";
 import security from "eslint-plugin-security";
 import prettierRecommended from "eslint-plugin-prettier/recommended";
+import jest from "eslint-plugin-jest";
 
 export default tseslint.config(
   js.configs.recommended,
@@ -38,6 +39,18 @@ export default tseslint.config(
     settings: {
       react: {
         version: "detect",
+      },
+    },
+  },
+  {
+    files: ["**/*.test.{js,ts}", "jest-setup.mjs"],
+    ...jest.configs["flat/recommended"],
+    languageOptions: {
+      globals: {
+        document: true,
+        window: true,
+        ...globals.node,
+        ...globals.jest,
       },
     },
   },

@@ -1,9 +1,7 @@
-import {
-  GraphQlRelationshipData,
-  Relationship,
-  RelationshipData,
-} from "./Relationship";
-import { GraphQlUploadData, Upload, UploadData } from "./Upload";
+import type { GraphQlRelationshipData, RelationshipData } from "./Relationship";
+import { Relationship } from "./Relationship";
+import type { GraphQlUploadData, UploadData } from "./Upload";
+import { Upload } from "./Upload";
 import type { BulletListData, CheckListData, NumberListData } from "./List";
 import { List } from "./List";
 import type { ParagraphData } from "./Paragraph";
@@ -15,8 +13,8 @@ import { Quote } from "./Quote";
 import type { HorizontalRuleData } from "./HorizontalRule";
 import { HorizontalRule } from "./HorizontalRule";
 import type { Options } from "./types";
-import { Block, BlockData, GraphQlBlockData } from "./Block";
-import { LineBreak, LineBreakData } from "./LineBreak";
+import type { BlockData, GraphQlBlockData } from "./Block";
+import { Block } from "./Block";
 
 export type RichTextRoot<T extends "strict" | "graphql" = "strict"> = {
   children: T extends "strict"
@@ -27,7 +25,6 @@ export type RichTextRoot<T extends "strict" | "graphql" = "strict"> = {
         | NumberListData
         | HeadingData
         | HorizontalRuleData
-        | LineBreakData
         | QuoteData
         | UploadData
         | RelationshipData
@@ -40,7 +37,6 @@ export type RichTextRoot<T extends "strict" | "graphql" = "strict"> = {
         | NumberListData
         | HeadingData
         | HorizontalRuleData
-        | LineBreakData
         | QuoteData
         | GraphQlUploadData
         | GraphQlRelationshipData
@@ -77,9 +73,6 @@ export const RichText = ({ data, options }: Props) => {
             return (
               <HorizontalRule key={index} data={child} options={options} />
             );
-          }
-          case "linebreak": {
-            return <LineBreak key={index} data={child} options={options} />;
           }
           case "list": {
             return <List key={index} data={child} options={options} />;

@@ -5,11 +5,13 @@ import { Link } from "./Link";
 import type { Options } from "./types";
 import type { InlineBlockData } from "./InlineBlock";
 import { InlineBlock } from "./InlineBlock";
-import { CSSProperties } from "react";
+import type { CSSProperties } from "react";
+import { LineBreak } from "./LineBreak";
+import type { LineBreakData } from "./LineBreak";
 
 export interface ParagraphData {
   type: "paragraph";
-  children: (TextData | LinkData | InlineBlockData)[];
+  children: (TextData | LinkData | LineBreakData | InlineBlockData)[];
   version: number;
   indent: number;
   format: "left" | "start" | "center" | "right" | "end" | "justify" | "";
@@ -47,6 +49,8 @@ export const Paragraph = ({ data, options }: Props) => {
           style={style}
         />
       );
+    } else if (paragraphChild.type === "linebreak") {
+      return <LineBreak key={index} data={paragraphChild} options={options} />;
     } else {
       return (
         <InlineBlock

@@ -62,6 +62,20 @@ exports[`BulletList should render default ul with default li if options provided
 </div>
 `;
 
+exports[`BulletList should render list item linebreak if list item is a linebreak 1`] = `
+<div>
+  <ul
+    class="list-bullet"
+  >
+    <li
+      value="1"
+    >
+      <br />
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`BulletList should render list item link if list item is a link 1`] = `
 <div>
   <ul
@@ -233,6 +247,31 @@ exports[`CheckList should render default ul with default li if options provided 
         for="randomUUID"
       >
         heading text
+      </label>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`CheckList should render list item linebreak if list item is a linebreak 1`] = `
+<div>
+  <ul
+    class="list-check"
+  >
+    <li
+      aria-checked="false"
+      role="checkbox"
+      tabindex="-1"
+      value="1"
+    >
+      <input
+        id="randomUUID"
+        type="checkbox"
+      />
+      <label
+        for="randomUUID"
+      >
+        <br />
       </label>
     </li>
   </ul>
@@ -412,6 +451,21 @@ exports[`NumberList should render default ol with default li if options provided
       value="1"
     >
       heading text
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`NumberList should render list item linebreak if list item is a linebreak 1`] = `
+<div>
+  <ol
+    class="list-number"
+    style="list-style: decimal;"
+  >
+    <li
+      value="1"
+    >
+      <br />
     </li>
   </ol>
 </div>

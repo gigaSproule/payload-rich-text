@@ -70,12 +70,6 @@ exports[`RichText should render horizontal rule if horizontal rule is a child 1`
 </div>
 `;
 
-exports[`RichText should render line break if line break is a child 1`] = `
-<div>
-  <br />
-</div>
-`;
-
 exports[`RichText should render number list if number list is a child 1`] = `
 <div>
   <ol
