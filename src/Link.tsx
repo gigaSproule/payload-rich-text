@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import type { CSSProperties } from "react";
 import type { TextData } from "./Text";
 import { Text } from "./Text";
 import type { Options } from "./types";

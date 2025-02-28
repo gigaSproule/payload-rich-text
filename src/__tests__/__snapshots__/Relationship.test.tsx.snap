@@ -8,7 +8,7 @@ exports[`Relationship should render custom render if options provided with relat
 <div>
   <div>
     Custom Relationship - 
-    {"type":"relationship","format":"","version":2,"relationTo":"page","value":{"id":"67922e89bff17903c13f53f0","some":"custom","block":"fields"}}
+    {"type":"relationship","format":"","version":2,"relationTo":"page","value":{"id":"67922e89bff17903c13f53f0","some":"custom","blockType":"fields"}}
   </div>
 </div>
 `;

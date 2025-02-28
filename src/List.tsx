@@ -1,8 +1,11 @@
 import type { TextData } from "./Text";
 import { Text } from "./Text";
 import type { Options } from "./types";
-import { CSSProperties } from "react";
-import { Link, LinkData } from "./Link";
+import type { CSSProperties } from "react";
+import type { LinkData } from "./Link";
+import { Link } from "./Link";
+import type { LineBreakData } from "./LineBreak";
+import { LineBreak } from "./LineBreak";
 
 export type ListItem = {
   indent: number;
@@ -14,15 +17,15 @@ export type ListItem = {
 };
 
 export type BulletListItem = ListItem & {
-  children: (TextData | LinkData | BulletListData)[];
+  children: (TextData | LinkData | LineBreakData | BulletListData)[];
 };
 
 export type NumberListItem = ListItem & {
-  children: (TextData | LinkData | NumberListData)[];
+  children: (TextData | LinkData | LineBreakData | NumberListData)[];
 };
 
 export type CheckListItem = ListItem & {
-  children: (TextData | LinkData | CheckListData)[];
+  children: (TextData | LinkData | LineBreakData | CheckListData)[];
   checked: boolean;
 };
 
@@ -76,6 +79,8 @@ export const List = ({ data, options, level = 0 }: Props) => {
             );
           } else if (listItem.type === "link") {
             return <Link key={listItem.id} data={listItem} options={options} />;
+          } else if (listItem.type === "linebreak") {
+            return <LineBreak key={index} data={listItem} options={options} />;
           } else {
             return (
               <List
@@ -135,6 +140,8 @@ export const List = ({ data, options, level = 0 }: Props) => {
             );
           } else if (listItem.type === "link") {
             return <Link key={listItem.id} data={listItem} options={options} />;
+          } else if (listItem.type === "linebreak") {
+            return <LineBreak key={index} data={listItem} options={options} />;
           } else {
             return <List key={index} data={listItem} options={options} />;
           }
@@ -171,6 +178,8 @@ export const List = ({ data, options, level = 0 }: Props) => {
             );
           } else if (listItem.type === "link") {
             return <Link key={listItem.id} data={listItem} options={options} />;
+          } else if (listItem.type === "linebreak") {
+            return <LineBreak key={index} data={listItem} options={options} />;
           } else {
             return <List key={index} data={listItem} options={options} />;
           }

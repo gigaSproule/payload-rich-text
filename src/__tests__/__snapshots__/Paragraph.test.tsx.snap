@@ -992,3 +992,37 @@ exports[`Paragraph should render default text with correct styling if no options
   </p>
 </div>
 `;
+
+exports[`Paragraph should render linebreak if children has inlineblock 1`] = `
+<div>
+  <p>
+    <div>
+      <span>
+        Custom InlineBlock - 
+        {"type":"inlineBlock","version":1,"fields":{"blockType":"some-block-type","some":"custom","block":"fields"}}
+      </span>
+      {}
+    </div>
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render linebreak if children has linebreak 1`] = `
+<div>
+  <p>
+    <br />
+  </p>
+</div>
+`;
+
+exports[`Paragraph should render linebreak if children has link 1`] = `
+<div>
+  <p>
+    <a
+      href="https://www.example.com"
+    >
+      heading text
+    </a>
+  </p>
+</div>
+`;

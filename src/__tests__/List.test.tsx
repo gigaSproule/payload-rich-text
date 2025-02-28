@@ -11,6 +11,7 @@ import {
   createNumberListItem,
 } from "./helpers/createListData";
 import { createLinkData } from "./helpers/createLinkData";
+import { createLineBreakData } from "./helpers/createLineBreakData";
 
 const originalCrypto = global.crypto;
 
@@ -98,6 +99,14 @@ describe("NumberList", () => {
         }}
       />,
     );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render list item linebreak if list item is a linebreak", () => {
+    const listData: Props["data"] = createNumberListData({
+      children: [createNumberListItem({ children: [createLineBreakData()] })],
+    });
+    const { container } = render(<List data={listData} />);
     expect(container).toMatchSnapshot();
   });
 
@@ -225,6 +234,14 @@ describe("CheckList", () => {
     expect(container).toMatchSnapshot();
   });
 
+  it("should render list item linebreak if list item is a linebreak", () => {
+    const listData: Props["data"] = createCheckListData({
+      children: [createCheckListItem({ children: [createLineBreakData()] })],
+    });
+    const { container } = render(<List data={listData} />);
+    expect(container).toMatchSnapshot();
+  });
+
   it("should render list item link if list item is a link", () => {
     const listData: Props["data"] = createCheckListData({
       children: [createCheckListItem({ children: [createLinkData()] })],
@@ -322,6 +339,14 @@ describe("BulletList", () => {
         }}
       />,
     );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render list item linebreak if list item is a linebreak", () => {
+    const listData: Props["data"] = createBulletListData({
+      children: [createBulletListItem({ children: [createLineBreakData()] })],
+    });
+    const { container } = render(<List data={listData} />);
     expect(container).toMatchSnapshot();
   });
 

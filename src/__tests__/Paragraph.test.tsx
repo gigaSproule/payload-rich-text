@@ -6,6 +6,7 @@ import { createTextData } from "./helpers/createTextData";
 import { createLinkData } from "./helpers/createLinkData";
 import { createInlineBlockData } from "./helpers/createInlineBlockData";
 import { createParagraphData } from "./helpers/createParagraphData";
+import { createLineBreakData } from "./helpers/createLineBreakData";
 
 describe("Paragraph", () => {
   it("should not render anything if no children are provided", () => {
@@ -19,6 +20,53 @@ describe("Paragraph", () => {
   it(`should render default text if no options provided`, () => {
     const paragraphData: Props["data"] = createParagraphData();
     const { container } = render(<Paragraph data={paragraphData} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it(`should render linebreak if children has linebreak`, () => {
+    const paragraphData: Props["data"] = createParagraphData({
+      children: [createLineBreakData()],
+    });
+    const { container } = render(<Paragraph data={paragraphData} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it(`should render linebreak if children has link`, () => {
+    const paragraphData: Props["data"] = createParagraphData({
+      children: [createLinkData()],
+    });
+    const { container } = render(
+      <Paragraph
+        data={paragraphData}
+        options={{
+          lineBreak: (lineBreak) => {
+            return <div>Custom BR - {JSON.stringify(lineBreak)}</div>;
+          },
+        }}
+      />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it(`should render linebreak if children has inlineblock`, () => {
+    const paragraphData: Props["data"] = createParagraphData({
+      children: [createInlineBlockData()],
+    });
+    const { container } = render(
+      <Paragraph
+        data={paragraphData}
+        options={{
+          inlineBlock: (inlineBlock, style) => {
+            return (
+              <div>
+                <span>Custom InlineBlock - {JSON.stringify(inlineBlock)}</span>
+                {JSON.stringify(style)}
+              </div>
+            );
+          },
+        }}
+      />,
+    );
     expect(container).toMatchSnapshot();
   });
 

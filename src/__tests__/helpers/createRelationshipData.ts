@@ -10,7 +10,7 @@ export const createRelationshipData = (
   value: {
     id: "67922e89bff17903c13f53f0",
     some: "custom",
-    block: "fields",
+    blockType: "fields",
   },
   ...relationshipData,
 });

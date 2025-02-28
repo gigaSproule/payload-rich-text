@@ -15,10 +15,10 @@ import type { QuoteData } from "./Quote";
 import type { GraphQlUploadData, UploadData } from "./Upload";
 import type { GraphQlRelationshipData, RelationshipData } from "./Relationship";
 import type { LinkData } from "./Link";
-import { BlockData, GraphQlBlockData } from "./Block";
-import { GraphQlInlineBlockData, InlineBlockData } from "./InlineBlock";
+import type { BlockData, GraphQlBlockData } from "./Block";
+import type { GraphQlInlineBlockData, InlineBlockData } from "./InlineBlock";
 import type { CSSProperties } from "react";
-import { LineBreakData } from "./LineBreak";
+import type { LineBreakData } from "./LineBreak";
 
 export type Options = {
   paragraph?: (

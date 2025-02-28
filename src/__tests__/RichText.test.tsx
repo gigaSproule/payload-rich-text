@@ -18,7 +18,6 @@ import { createBlockData } from "./helpers/createBlockData";
 import { createHeadingData } from "./helpers/createHeadingData";
 import { createHorizontalRuleData } from "./helpers/createHorizontalRuleData";
 import { createUploadData } from "./helpers/createUploadData";
-import { createLineBreakData } from "./helpers/createLineBreakData";
 
 const originalCrypto = global.crypto;
 
@@ -73,16 +72,6 @@ describe("RichText", () => {
     const richTextData: Props["data"] = createRichTextData({
       root: createRichTextRoot({
         children: [createHorizontalRuleData()],
-      }),
-    });
-    const { container } = render(<RichText data={richTextData} />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it("should render line break if line break is a child", () => {
-    const richTextData: Props["data"] = createRichTextData({
-      root: createRichTextRoot({
-        children: [createLineBreakData()],
       }),
     });
     const { container } = render(<RichText data={richTextData} />);
