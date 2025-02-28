@@ -21,10 +21,16 @@ jobs:
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
+      - name: Generate bot app token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.ACTIONS_BOT_ID }}
+          private-key: ${{ secrets.ACTIONS_BOT_KEY }}
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ssh-key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          token: ${{ steps.generate_token.outputs.token }}
       - name: Set up Node 22
         uses: actions/setup-node@v4
         with:
@@ -37,5 +43,5 @@ jobs:
         run: yarn test
       - name: Run release
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: yarn semantic-release
