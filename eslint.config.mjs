@@ -1,26 +1,26 @@
 import js from "@eslint/js";
-import globals from "globals";
+import jest from "eslint-plugin-jest";
+import prettierRecommended from "eslint-plugin-prettier/recommended";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
-import tseslint from "typescript-eslint";
 import security from "eslint-plugin-security";
-import prettierRecommended from "eslint-plugin-prettier/recommended";
-import jest from "eslint-plugin-jest";
+import { defineConfig } from "eslint/config";
+import globals from "globals";
+import tseslint from "typescript-eslint";
 
-export default tseslint.config(
+export default defineConfig(
   js.configs.recommended,
   security.configs.recommended,
   prettierRecommended,
-  ...tseslint.configs.recommended,
+  tseslint.configs.recommended,
   { ignores: ["dist", "node_modules", ".yarn"] },
   {
     files: ["**/*.{js,cjs,mjs}"],
-    ...tseslint.configs.disableTypeChecked,
+    extends: [tseslint.configs.disableTypeChecked],
   },
   {
     files: ["**/*.{ts,tsx}"],
-    ...react.configs.flat.recommended,
-    ...reactHooks.configs.recommended,
+    extends: [react.configs.flat.recommended, reactHooks.configs.recommended],
     languageOptions: {
       ecmaVersion: "latest",
       sourceType: "module",
@@ -31,8 +31,6 @@ export default tseslint.config(
       "react-hooks": reactHooks,
     },
     rules: {
-      ...react.configs.flat.recommended.rules,
-      ...reactHooks.configs.recommended.rules,
       "react/jsx-uses-react": "off",
       "react/react-in-jsx-scope": "off",
     },
@@ -44,7 +42,7 @@ export default tseslint.config(
   },
   {
     files: ["**/*.test.{js,ts}", "jest-setup.mjs"],
-    ...jest.configs["flat/recommended"],
+    extends: [jest.configs["flat/recommended"]],
     languageOptions: {
       globals: {
         document: true,

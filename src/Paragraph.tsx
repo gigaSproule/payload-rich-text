@@ -1,13 +1,13 @@
-import type { TextData } from "./Text";
-import { Text } from "./Text";
-import type { LinkData } from "./Link";
-import { Link } from "./Link";
-import type { Options } from "./types";
+import type { CSSProperties } from "react";
 import type { InlineBlockData } from "./InlineBlock";
 import { InlineBlock } from "./InlineBlock";
-import type { CSSProperties } from "react";
-import { LineBreak } from "./LineBreak";
 import type { LineBreakData } from "./LineBreak";
+import { LineBreak } from "./LineBreak";
+import type { LinkData } from "./Link";
+import { Link } from "./Link";
+import type { TextData } from "./Text";
+import { Text } from "./Text";
+import type { Options } from "./types";
 
 export interface ParagraphData {
   type: "paragraph";
