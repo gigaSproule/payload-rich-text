@@ -13,6 +13,9 @@ export default defineConfig(
   security.configs.recommended,
   prettierRecommended,
   tseslint.configs.recommended,
+  react.configs.flat.recommended,
+  react.configs.flat["jsx-runtime"],
+  reactHooks.configs.flat.recommended,
   { ignores: ["dist", "node_modules", ".yarn"] },
   {
     files: ["**/*.{js,cjs,mjs}"],
@@ -20,15 +23,10 @@ export default defineConfig(
   },
   {
     files: ["**/*.{ts,tsx}"],
-    extends: [react.configs.flat.recommended, reactHooks.configs.recommended],
     languageOptions: {
       ecmaVersion: "latest",
       sourceType: "module",
       globals: globals.browser,
-    },
-    plugins: {
-      react,
-      "react-hooks": reactHooks,
     },
     rules: {
       "react/jsx-uses-react": "off",
