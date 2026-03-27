@@ -1270,7 +1270,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.29.0":
+"@babel/preset-env@npm:^7.29.2":
   version: 7.29.2
   resolution: "@babel/preset-env@npm:7.29.2"
   dependencies:
@@ -1451,7 +1451,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^20.4.2":
+"@commitlint/cli@npm:^20.5.0":
   version: 20.5.0
   resolution: "@commitlint/cli@npm:20.5.0"
   dependencies:
@@ -1475,7 +1475,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-angular@npm:^20.4.2":
+"@commitlint/config-angular@npm:^20.5.0":
   version: 20.5.0
   resolution: "@commitlint/config-angular@npm:20.5.0"
   dependencies:
@@ -2038,7 +2038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/globals@npm:30.3.0, @jest/globals@npm:^30.2.0":
+"@jest/globals@npm:30.3.0, @jest/globals@npm:^30.3.0":
   version: 30.3.0
   resolution: "@jest/globals@npm:30.3.0"
   dependencies:
@@ -3835,7 +3835,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-jest@npm:30.3.0, babel-jest@npm:^30.2.0":
+"babel-jest@npm:30.3.0, babel-jest@npm:^30.3.0":
   version: 30.3.0
   resolution: "babel-jest@npm:30.3.0"
   dependencies:
@@ -5057,7 +5057,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^29.15.0":
+"eslint-plugin-jest@npm:^29.15.1":
   version: 29.15.1
   resolution: "eslint-plugin-jest@npm:29.15.1"
   dependencies:
@@ -5176,7 +5176,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^10.0.2":
+"eslint@npm:^10.1.0":
   version: 10.1.0
   resolution: "eslint@npm:10.1.0"
   dependencies:
@@ -5859,7 +5859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^17.3.0":
+"globals@npm:^17.4.0":
   version: 17.4.0
   resolution: "globals@npm:17.4.0"
   checksum: 10c0/2be9e8c2b9035836f13d420b22f0247a328db82967d3bebfc01126d888ed609305f06c05895914e969653af5c6ba35fd7a0920f3e6c869afa60666c810630feb
@@ -6904,7 +6904,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-environment-jsdom@npm:^30.2.0":
+"jest-environment-jsdom@npm:^30.3.0":
   version: 30.3.0
   resolution: "jest-environment-jsdom@npm:30.3.0"
   dependencies:
@@ -7205,7 +7205,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^30.2.0":
+"jest@npm:^30.3.0":
   version: 30.3.0
   resolution: "jest@npm:30.3.0"
   dependencies:
@@ -7593,7 +7593,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^16.2.7":
+"lint-staged@npm:^16.4.0":
   version: 16.4.0
   resolution: "lint-staged@npm:16.4.0"
   dependencies:
@@ -8945,13 +8945,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "payload-rich-text@workspace:."
   dependencies:
-    "@babel/preset-env": "npm:^7.29.0"
+    "@babel/preset-env": "npm:^7.29.2"
     "@babel/preset-react": "npm:^7.28.5"
     "@babel/preset-typescript": "npm:^7.28.5"
-    "@commitlint/cli": "npm:^20.4.2"
-    "@commitlint/config-angular": "npm:^20.4.2"
+    "@commitlint/cli": "npm:^20.5.0"
+    "@commitlint/config-angular": "npm:^20.5.0"
     "@eslint/js": "npm:^10.0.1"
-    "@jest/globals": "npm:^30.2.0"
+    "@jest/globals": "npm:^30.3.0"
     "@semantic-release/commit-analyzer": "npm:^13.0.1"
     "@semantic-release/exec": "npm:^7.1.0"
     "@semantic-release/git": "npm:^10.0.1"
@@ -8963,27 +8963,27 @@ __metadata:
     "@types/eslint-plugin-security": "npm:^3.0.1"
     "@types/react": "npm:^19.2.14"
     "@types/react-dom": "npm:^19.2.3"
-    babel-jest: "npm:^30.2.0"
-    eslint: "npm:^10.0.2"
+    babel-jest: "npm:^30.3.0"
+    eslint: "npm:^10.1.0"
     eslint-config-prettier: "npm:^10.1.8"
-    eslint-plugin-jest: "npm:^29.15.0"
+    eslint-plugin-jest: "npm:^29.15.1"
     eslint-plugin-prettier: "npm:^5.5.5"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^7.0.1"
     eslint-plugin-security: "npm:^4.0.0"
-    globals: "npm:^17.3.0"
+    globals: "npm:^17.4.0"
     husky: "npm:^9.1.7"
-    jest: "npm:^30.2.0"
-    jest-environment-jsdom: "npm:^30.2.0"
-    lint-staged: "npm:^16.2.7"
+    jest: "npm:^30.3.0"
+    jest-environment-jsdom: "npm:^30.3.0"
+    lint-staged: "npm:^16.4.0"
     prettier: "npm:^3.8.1"
     react: "npm:^19.2.4"
     react-dom: "npm:^19.2.4"
     react-test-renderer: "npm:^19.2.4"
     semantic-release: "npm:^25.0.3"
     semantic-release-replace-plugin: "npm:^1.2.7"
-    typescript: "npm:^6.0.0"
-    typescript-eslint: "npm:^8.56.1"
+    typescript: "npm:^6.0.2"
+    typescript-eslint: "npm:^8.57.2"
     yalc: "npm:1.0.0-pre.53"
   peerDependencies:
     react: ^19.0.0
@@ -10694,7 +10694,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.56.1":
+"typescript-eslint@npm:^8.57.2":
   version: 8.57.2
   resolution: "typescript-eslint@npm:8.57.2"
   dependencies:
@@ -10709,7 +10709,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^6.0.0":
+"typescript@npm:^6.0.2":
   version: 6.0.2
   resolution: "typescript@npm:6.0.2"
   bin:
@@ -10719,7 +10719,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^6.0.0#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^6.0.2#optional!builtin<compat/typescript>":
   version: 6.0.2
   resolution: "typescript@patch:typescript@npm%3A6.0.2#optional!builtin<compat/typescript>::version=6.0.2&hash=5786d5"
   bin:
