@@ -9,6 +9,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  id-token: write
 
 concurrency:
   group: "${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}"
@@ -18,8 +19,6 @@ jobs:
   test:
     runs-on: "ubuntu-latest"
     timeout-minutes: 30
-    env:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - name: Generate bot app token
         id: generate_token
