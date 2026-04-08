@@ -5176,7 +5176,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^10.1.0":
+"eslint@npm:^10.2.0":
   version: 10.2.0
   resolution: "eslint@npm:10.2.0"
   dependencies:
@@ -8964,7 +8964,7 @@ __metadata:
     "@types/react": "npm:^19.2.14"
     "@types/react-dom": "npm:^19.2.3"
     babel-jest: "npm:^30.3.0"
-    eslint: "npm:^10.1.0"
+    eslint: "npm:^10.2.0"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-jest: "npm:^29.15.1"
     eslint-plugin-prettier: "npm:^5.5.5"
@@ -8977,13 +8977,13 @@ __metadata:
     jest-environment-jsdom: "npm:^30.3.0"
     lint-staged: "npm:^16.4.0"
     prettier: "npm:^3.8.1"
-    react: "npm:^19.2.4"
-    react-dom: "npm:^19.2.4"
-    react-test-renderer: "npm:^19.2.4"
+    react: "npm:^19.2.5"
+    react-dom: "npm:^19.2.5"
+    react-test-renderer: "npm:^19.2.5"
     semantic-release: "npm:^25.0.3"
     semantic-release-replace-plugin: "npm:^1.2.7"
     typescript: "npm:^6.0.2"
-    typescript-eslint: "npm:^8.57.2"
+    typescript-eslint: "npm:^8.58.1"
     yalc: "npm:1.0.0-pre.53"
   peerDependencies:
     react: ^19.0.0
@@ -9228,7 +9228,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.2.4":
+"react-dom@npm:^19.2.5":
   version: 19.2.5
   resolution: "react-dom@npm:19.2.5"
   dependencies:
@@ -9267,7 +9267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-test-renderer@npm:^19.2.4":
+"react-test-renderer@npm:^19.2.5":
   version: 19.2.5
   resolution: "react-test-renderer@npm:19.2.5"
   dependencies:
@@ -9279,7 +9279,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^19.2.4":
+"react@npm:^19.2.5":
   version: 19.2.5
   resolution: "react@npm:19.2.5"
   checksum: 10c0/4b5f231dbef92886f602533c9ce3bde04d99f0e71dfb5d794c43e02726efaad0421c08688f75fc98a6d6e1dc017372e1af7abbfecdc86a79968f461675931a7a
@@ -10694,7 +10694,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.57.2":
+"typescript-eslint@npm:^8.58.1":
   version: 8.58.1
   resolution: "typescript-eslint@npm:8.58.1"
   dependencies:
