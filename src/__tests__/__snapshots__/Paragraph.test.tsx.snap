@@ -996,13 +996,13 @@ exports[`Paragraph should render default text with correct styling if no options
 exports[`Paragraph should render linebreak if children has inlineblock 1`] = `
 <div>
   <p>
-    <div>
+    <span>
       <span>
         Custom InlineBlock - 
         {"type":"inlineBlock","version":1,"fields":{"blockType":"some-block-type","some":"custom","block":"fields"}}
       </span>
       {}
-    </div>
+    </span>
   </p>
 </div>
 `;
