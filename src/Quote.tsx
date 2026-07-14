@@ -1,7 +1,7 @@
 import type { TextData } from "./Text";
 import { Text } from "./Text";
 
-import { Options } from "./types.js";
+import type { Options } from "./types";
 
 export interface QuoteData {
   type: "quote";

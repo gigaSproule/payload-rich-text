@@ -58,10 +58,10 @@ describe("Paragraph", () => {
         options={{
           inlineBlock: (inlineBlock, style) => {
             return (
-              <div>
+              <span>
                 <span>Custom InlineBlock - {JSON.stringify(inlineBlock)}</span>
                 {JSON.stringify(style)}
-              </div>
+              </span>
             );
           },
         }}
