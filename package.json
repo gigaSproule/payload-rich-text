@@ -68,7 +68,7 @@
     "react-test-renderer": "^19.2.5",
     "semantic-release": "^25.0.3",
     "semantic-release-replace-plugin": "^1.2.7",
-    "typescript": "^6.0.2",
+    "typescript": "^7.0.0",
     "typescript-eslint": "^8.64.0",
     "yalc": "1.0.0-pre.53"
   },
