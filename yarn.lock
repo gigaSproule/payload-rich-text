@@ -2826,21 +2826,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/git@npm:11.0.0":
-  version: 11.0.0
-  resolution: "@semantic-release/git@npm:11.0.0"
+"@semantic-release/git@npm:11.0.1":
+  version: 11.0.1
+  resolution: "@semantic-release/git@npm:11.0.1"
   dependencies:
     "@semantic-release/error": "npm:^4.0.0"
     aggregate-error: "npm:^5.0.0"
     debug: "npm:^4.0.0"
     dir-glob: "npm:^3.0.0"
-    execa: "npm:^9.0.0"
+    execa: "npm:^10.0.0"
     lodash-es: "npm:^4.17.21"
     micromatch: "npm:^4.0.0"
     p-reduce: "npm:^3.0.0"
   peerDependencies:
     semantic-release: ">=20.1.0"
-  checksum: 10c0/b2bcf3f9aec5d38bdff4ca7432687398e7b009c092dfaa78fb07ab9e47e86b7f474f79e1a36dcb997c005944f0f438d235adf82792dfcb913c14751cc67d4e31
+  checksum: 10c0/a94d2f4c2bf4e0521f87648618e3b081bef9679cf64a805323a86dabc7be26446358f9b0735756396832db4994d0114f6171931f5f3bb061e258fea982ca9ec4
   languageName: node
   linkType: hard
 
@@ -5197,9 +5197,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:29.15.5":
-  version: 29.15.5
-  resolution: "eslint-plugin-jest@npm:29.15.5"
+"eslint-plugin-jest@npm:29.16.0":
+  version: 29.16.0
+  resolution: "eslint-plugin-jest@npm:29.16.0"
   dependencies:
     "@typescript-eslint/utils": "npm:^8.0.0"
   peerDependencies:
@@ -5214,7 +5214,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 10c0/76cb6b99fbabcb509b682a19321820b964a625442d25db9d9d26f325aec83224abe72e8ea53ffae1d54a4442d2792dd4bd9fd015ca471f1c095cac0ccae1f77d
+  checksum: 10c0/ac3b0b0502c48285063a968219852979b0526f814bee90c65ef417e495b270a5aee437961ab51941caa1d0ae4ae5387a55374946165c17cf5e4f001972e0de44
   languageName: node
   linkType: hard
 
@@ -5411,6 +5411,27 @@ __metadata:
   version: 2.0.3
   resolution: "esutils@npm:2.0.3"
   checksum: 10c0/9a2fe69a41bfdade834ba7c42de4723c97ec776e40656919c62cbd13607c45e127a003f05f724a1ea55e5029a4cf2de444b13009f2af71271e42d93a637137c7
+  languageName: node
+  linkType: hard
+
+"execa@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "execa@npm:10.0.0"
+  dependencies:
+    "@sindresorhus/merge-streams": "npm:^4.0.0"
+    figures: "npm:^6.1.0"
+    get-stream: "npm:^9.0.1"
+    human-signals: "npm:^8.0.1"
+    is-plain-obj: "npm:^4.1.0"
+    is-stream: "npm:^4.0.1"
+    npm-run-path: "npm:^6.0.0"
+    path-key: "npm:^4.0.0"
+    pretty-ms: "npm:^9.3.0"
+    signal-exit: "npm:^4.1.0"
+    strip-final-newline: "npm:^4.0.0"
+    which-command: "npm:^0.1.0"
+    yoctocolors: "npm:^2.1.2"
+  checksum: 10c0/975722f1005c84b9a35efc816e26d1bfee87ce42ab5f3328c2b9966cc180db31644e101b10005c2cde8525a1e4c834e8eba9bfb32432f39f79bf2e6c327221ea
   languageName: node
   linkType: hard
 
@@ -5852,7 +5873,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-stream@npm:^9.0.0":
+"get-stream@npm:^9.0.0, get-stream@npm:^9.0.1":
   version: 9.0.1
   resolution: "get-stream@npm:9.0.1"
   dependencies:
@@ -9001,7 +9022,7 @@ __metadata:
     "@jest/globals": "npm:30.4.1"
     "@semantic-release/commit-analyzer": "npm:13.0.1"
     "@semantic-release/exec": "npm:7.1.0"
-    "@semantic-release/git": "npm:11.0.0"
+    "@semantic-release/git": "npm:11.0.1"
     "@semantic-release/github": "npm:12.0.9"
     "@semantic-release/release-notes-generator": "npm:14.1.1"
     "@testing-library/dom": "npm:10.4.1"
@@ -9013,7 +9034,7 @@ __metadata:
     babel-jest: "npm:30.4.1"
     eslint: "npm:10.7.0"
     eslint-config-prettier: "npm:10.1.8"
-    eslint-plugin-jest: "npm:29.15.5"
+    eslint-plugin-jest: "npm:29.16.0"
     eslint-plugin-prettier: "npm:5.5.6"
     eslint-plugin-react: "npm:7.37.5"
     eslint-plugin-react-hooks: "npm:7.1.1"
@@ -9168,7 +9189,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-ms@npm:^9.2.0":
+"pretty-ms@npm:^9.2.0, pretty-ms@npm:^9.3.0":
   version: 9.3.0
   resolution: "pretty-ms@npm:9.3.0"
   dependencies:
@@ -11114,6 +11135,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"which-command@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "which-command@npm:0.1.0"
+  bin:
+    which-command: cli.js
+  checksum: 10c0/15b3952b466961ce147de197ef2d40d0f6242dac7d07785936541f7b8f6dba632bd6eab0abac362b80efc0029c536d044717c10aa96562831b0d0a7d548a0029
+  languageName: node
+  linkType: hard
+
 "which-typed-array@npm:^1.1.16, which-typed-array@npm:^1.1.19":
   version: 1.1.22
   resolution: "which-typed-array@npm:1.1.22"
@@ -11398,7 +11428,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yoctocolors@npm:^2.1.1":
+"yoctocolors@npm:^2.1.1, yoctocolors@npm:^2.1.2":
   version: 2.1.2
   resolution: "yoctocolors@npm:2.1.2"
   checksum: 10c0/b220f30f53ebc2167330c3adc86a3c7f158bcba0236f6c67e25644c3188e2571a6014ffc1321943bb619460259d3d27eb4c9cc58c2d884c1b195805883ec7066
