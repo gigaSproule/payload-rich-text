@@ -1613,21 +1613,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:21.2.2":
-  version: 21.2.2
-  resolution: "@commitlint/cli@npm:21.2.2"
+"@commitlint/cli@npm:21.2.3":
+  version: 21.2.3
+  resolution: "@commitlint/cli@npm:21.2.3"
   dependencies:
-    "@commitlint/config-conventional": "npm:^21.2.2"
-    "@commitlint/format": "npm:^21.2.2"
-    "@commitlint/lint": "npm:^21.2.2"
-    "@commitlint/load": "npm:^21.2.2"
-    "@commitlint/read": "npm:^21.2.1"
-    "@commitlint/types": "npm:^21.2.0"
+    "@commitlint/config-conventional": "npm:^21.2.3"
+    "@commitlint/format": "npm:^21.2.3"
+    "@commitlint/lint": "npm:^21.2.3"
+    "@commitlint/load": "npm:^21.2.3"
+    "@commitlint/read": "npm:^21.2.3"
+    "@commitlint/types": "npm:^21.2.3"
     tinyexec: "npm:^1.0.0"
     yargs: "npm:^18.0.0"
   bin:
     commitlint: cli.js
-  checksum: 10c0/fb57c853f5c4dcd4d5f70fb681e41661b39efc30f938256984974617665ad745879ac41227e8f0aca4fc4f951fdf79d8e2650cd76966b6e18e5299a7e8d2d6a3
+  checksum: 10c0/544e86b5e5af0cbae5a55b5643dd9a8565b7f00e435378b46eb372a0b46adf330577b7d5c25abddbb30d4aa3ad78b114b2514ca936aeff3b310eb6e5f13dfc9c
   languageName: node
   linkType: hard
 
@@ -1638,16 +1638,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-angular@npm:21.2.2":
-  version: 21.2.2
-  resolution: "@commitlint/config-angular@npm:21.2.2"
+"@commitlint/config-angular@npm:21.2.3":
+  version: 21.2.3
+  resolution: "@commitlint/config-angular@npm:21.2.3"
   dependencies:
     "@commitlint/config-angular-type-enum": "npm:^21.0.1"
-  checksum: 10c0/fcafc49a18ca24a5401d0900f3aba23fbd5a9600fb6b83505e299fdf14263967e3d3ef0251147e3eae71289c26675cd3e2f573b774b77876c747c8f7b5bfb14e
+  checksum: 10c0/0e21fe041ca7c3ef772a11640c88b0a2d96efe54275f5d535e18ceabfe56271294c6a4be0b5e6195b3495d25e9db79f5696b8f6a02da45806604ee4cbdc4d81a
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^21.2.2":
+"@commitlint/config-conventional@npm:^21.2.3":
   version: 21.2.3
   resolution: "@commitlint/config-conventional@npm:21.2.3"
   dependencies:
@@ -1684,7 +1684,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/format@npm:^21.2.2":
+"@commitlint/format@npm:^21.2.3":
   version: 21.2.3
   resolution: "@commitlint/format@npm:21.2.3"
   dependencies:
@@ -1704,7 +1704,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/lint@npm:^21.2.2":
+"@commitlint/lint@npm:^21.2.3":
   version: 21.2.3
   resolution: "@commitlint/lint@npm:21.2.3"
   dependencies:
@@ -1716,7 +1716,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:^21.2.2":
+"@commitlint/load@npm:^21.2.3":
   version: 21.2.3
   resolution: "@commitlint/load@npm:21.2.3"
   dependencies:
@@ -1751,7 +1751,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/read@npm:^21.2.1":
+"@commitlint/read@npm:^21.2.3":
   version: 21.2.3
   resolution: "@commitlint/read@npm:21.2.3"
   dependencies:
@@ -1804,7 +1804,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/types@npm:^21.2.0, @commitlint/types@npm:^21.2.3":
+"@commitlint/types@npm:^21.2.3":
   version: 21.2.3
   resolution: "@commitlint/types@npm:21.2.3"
   dependencies:
@@ -9273,8 +9273,8 @@ __metadata:
     "@babel/preset-env": "npm:8.0.6"
     "@babel/preset-react": "npm:8.0.1"
     "@babel/preset-typescript": "npm:8.0.1"
-    "@commitlint/cli": "npm:21.2.2"
-    "@commitlint/config-angular": "npm:21.2.2"
+    "@commitlint/cli": "npm:21.2.3"
+    "@commitlint/config-angular": "npm:21.2.3"
     "@eslint/js": "npm:10.0.1"
     "@jest/globals": "npm:30.5.2"
     "@semantic-release/commit-analyzer": "npm:13.0.1"
