@@ -3355,22 +3355,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint-plugin-security@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@types/eslint-plugin-security@npm:3.0.1"
+"@types/eslint-plugin-security@npm:4.2.1":
+  version: 4.2.1
+  resolution: "@types/eslint-plugin-security@npm:4.2.1"
   dependencies:
-    "@types/eslint": "npm:*"
-  checksum: 10c0/e126a319b70f0b687602e02379685348c1bc8b38a5155874d3bc1b1c99ebaaa7333b89cbe18d1eb4c4af0a3622855338bec5df7e25f41a4c616f72245132fa19
-  languageName: node
-  linkType: hard
-
-"@types/eslint@npm:*":
-  version: 9.6.1
-  resolution: "@types/eslint@npm:9.6.1"
-  dependencies:
-    "@types/estree": "npm:*"
-    "@types/json-schema": "npm:*"
-  checksum: 10c0/69ba24fee600d1e4c5abe0df086c1a4d798abf13792d8cfab912d76817fe1a894359a1518557d21237fbaf6eda93c5ab9309143dee4c59ef54336d1b3570420e
+    eslint-plugin-security: "npm:*"
+  checksum: 10c0/df05f937f2e658d3acc3b1a58abe2eec4b650f3efaaa961bbfdd42a3827fd0361614336933cacc6d7a2502583a7a7eda2e1efb1ee824997c0f1e51f52a57e05f
   languageName: node
   linkType: hard
 
@@ -3381,7 +3371,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:*, @types/estree@npm:^1.0.6, @types/estree@npm:^1.0.8":
+"@types/estree@npm:^1.0.6, @types/estree@npm:^1.0.8":
   version: 1.0.10
   resolution: "@types/estree@npm:1.0.10"
   checksum: 10c0/d258926dac68425e77e43fd64045123b77f998ab2cf0bd0cc5a6ff016c365e60ed26f42adac64551906c1beab3bea08d60d113f905829ac60cfd6409db4761e9
@@ -3431,7 +3421,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.15":
+"@types/json-schema@npm:^7.0.15":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
   checksum: 10c0/a996a745e6c5d60292f36731dd41341339d4eeed8180bb09226e5c8d23759067692b1d88e5d91d72ee83dfc00d3aca8e7bd43ea120516c17922cbcb7c3e252db
@@ -5550,7 +5540,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-security@npm:4.2.1":
+"eslint-plugin-security@npm:*, eslint-plugin-security@npm:4.2.1":
   version: 4.2.1
   resolution: "eslint-plugin-security@npm:4.2.1"
   dependencies:
@@ -9302,7 +9292,7 @@ __metadata:
     "@testing-library/dom": "npm:10.4.2"
     "@testing-library/jest-dom": "npm:8.0.0"
     "@testing-library/react": "npm:16.3.3"
-    "@types/eslint-plugin-security": "npm:3.0.1"
+    "@types/eslint-plugin-security": "npm:4.2.1"
     "@types/react": "npm:19.3.1"
     "@types/react-dom": "npm:19.3.0"
     babel-jest: "npm:30.5.2"
